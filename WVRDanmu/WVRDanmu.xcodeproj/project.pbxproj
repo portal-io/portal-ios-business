@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3225DB661F6920F100425475 /* Target_danmu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3225DB651F6920F100425475 /* Target_danmu.m */; };
+		32CC26671F70FC67003FDBC4 /* WVRDanmuListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC26661F70FC67003FDBC4 /* WVRDanmuListView.m */; };
+		32CC266B1F7100DD003FDBC4 /* WVRDamuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC266A1F7100DD003FDBC4 /* WVRDamuController.m */; };
+		32CC266E1F710E1D003FDBC4 /* WVRLiveTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC266D1F710E1D003FDBC4 /* WVRLiveTextField.m */; };
+		32F09A8B1F61453500264EAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09A8A1F61453500264EAC /* main.m */; };
+		32F09A8E1F61453500264EAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09A8D1F61453500264EAC /* AppDelegate.m */; };
+		32F09A911F61453500264EAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09A901F61453500264EAC /* ViewController.m */; };
+		32F09A941F61453500264EAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F09A921F61453500264EAC /* Main.storyboard */; };
+		32F09A961F61453500264EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F09A951F61453500264EAC /* Assets.xcassets */; };
+		32F09A991F61453500264EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F09A971F61453500264EAC /* LaunchScreen.storyboard */; };
+		32F09AA41F61453500264EAC /* WVRDanmuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09AA31F61453500264EAC /* WVRDanmuTests.m */; };
+		32F09AAF1F61453500264EAC /* WVRDanmuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09AAE1F61453500264EAC /* WVRDanmuUITests.m */; };
+		32F09ADE1F6146BD00264EAC /* WVRHttpRoomLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09AC11F6146BD00264EAC /* WVRHttpRoomLogin.m */; };
+		32F09ADF1F6146BD00264EAC /* WVRHttpRoomLoginReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09AC31F6146BD00264EAC /* WVRHttpRoomLoginReformer.m */; };
+		32F09AE01F6146BD00264EAC /* WVRHttpUserAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09AC61F6146BD00264EAC /* WVRHttpUserAuth.m */; };
+		32F09AE11F6146BD00264EAC /* WVRHttpUserAuthReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09AC81F6146BD00264EAC /* WVRHttpUserAuthReformer.m */; };
+		32F09AE21F6146BD00264EAC /* WVRAuthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09ACB1F6146BD00264EAC /* WVRAuthModel.m */; };
+		32F09AE31F6146BD00264EAC /* WVRLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09ACD1F6146BD00264EAC /* WVRLoginModel.m */; };
+		32F09AE41F6146BD00264EAC /* WVRRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09ACF1F6146BD00264EAC /* WVRRoomModel.m */; };
+		32F09AE61F6146BD00264EAC /* WVRWebSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09AD31F6146BD00264EAC /* WVRWebSocketClient.m */; };
+		32F09AE71F6146BD00264EAC /* WVRWebSocketConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09AD51F6146BD00264EAC /* WVRWebSocketConfig.m */; };
+		32F09AE81F6146BD00264EAC /* WVRWebSocketPrepare.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09AD71F6146BD00264EAC /* WVRWebSocketPrepare.m */; };
+		32F09AE91F6146BD00264EAC /* WVRWebSocketStatusHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09ADA1F6146BD00264EAC /* WVRWebSocketStatusHandle.m */; };
+		32F09AF51F614FC500264EAC /* WVRApiHttpDanmuSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09AED1F614FC500264EAC /* WVRApiHttpDanmuSend.m */; };
+		32F09AF61F614FC500264EAC /* WVRApiHttpDanmuSendReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09AEF1F614FC500264EAC /* WVRApiHttpDanmuSendReformer.m */; };
+		32F09AF71F614FC500264EAC /* WVRHttpGuestUserAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09AF21F614FC500264EAC /* WVRHttpGuestUserAuth.m */; };
+		32F09AF81F614FC500264EAC /* WVRHttpGuestUserAuthReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F09AF41F614FC500264EAC /* WVRHttpGuestUserAuthReformer.m */; };
+		A11482A41F6CFC8E00025655 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BAB02B1F62405900A69F2F /* SocketIO.framework */; };
+		A11482A51F6CFC8E00025655 /* SocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32BAB02B1F62405900A69F2F /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5A65B48DDCC32AE169FED6F /* libPods-WVRDanmu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCC1DDE2E41638D902C9C08 /* libPods-WVRDanmu.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32F09AA01F61453500264EAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32F09A7E1F61453500264EAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F09A851F61453500264EAC;
+			remoteInfo = WVRDanmu;
+		};
+		32F09AAB1F61453500264EAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32F09A7E1F61453500264EAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F09A851F61453500264EAC;
+			remoteInfo = WVRDanmu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A11482A61F6CFC8E00025655 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A11482A51F6CFC8E00025655 /* SocketIO.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DCC1DDE2E41638D902C9C08 /* libPods-WVRDanmu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WVRDanmu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3225DB641F6920F100425475 /* Target_danmu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_danmu.h; sourceTree = "<group>"; };
+		3225DB651F6920F100425475 /* Target_danmu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_danmu.m; sourceTree = "<group>"; };
+		32BAB02B1F62405900A69F2F /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SocketIO.framework; sourceTree = "<group>"; };
+		32CC26651F70FC67003FDBC4 /* WVRDanmuListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRDanmuListView.h; sourceTree = "<group>"; };
+		32CC26661F70FC67003FDBC4 /* WVRDanmuListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRDanmuListView.m; sourceTree = "<group>"; };
+		32CC26691F7100DD003FDBC4 /* WVRDamuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRDamuController.h; sourceTree = "<group>"; };
+		32CC266A1F7100DD003FDBC4 /* WVRDamuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRDamuController.m; sourceTree = "<group>"; };
+		32CC266C1F710E1D003FDBC4 /* WVRLiveTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRLiveTextField.h; sourceTree = "<group>"; };
+		32CC266D1F710E1D003FDBC4 /* WVRLiveTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRLiveTextField.m; sourceTree = "<group>"; };
+		32F09A861F61453500264EAC /* WVRDanmu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WVRDanmu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F09A8A1F61453500264EAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32F09A8C1F61453500264EAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32F09A8D1F61453500264EAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32F09A8F1F61453500264EAC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		32F09A901F61453500264EAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		32F09A931F61453500264EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32F09A951F61453500264EAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32F09A981F61453500264EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32F09A9A1F61453500264EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F09A9F1F61453500264EAC /* WVRDanmuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WVRDanmuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F09AA31F61453500264EAC /* WVRDanmuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRDanmuTests.m; sourceTree = "<group>"; };
+		32F09AA51F61453500264EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F09AAA1F61453500264EAC /* WVRDanmuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WVRDanmuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F09AAE1F61453500264EAC /* WVRDanmuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRDanmuUITests.m; sourceTree = "<group>"; };
+		32F09AB01F61453500264EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F09AC01F6146BD00264EAC /* WVRHttpRoomLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpRoomLogin.h; sourceTree = "<group>"; };
+		32F09AC11F6146BD00264EAC /* WVRHttpRoomLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpRoomLogin.m; sourceTree = "<group>"; };
+		32F09AC21F6146BD00264EAC /* WVRHttpRoomLoginReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpRoomLoginReformer.h; sourceTree = "<group>"; };
+		32F09AC31F6146BD00264EAC /* WVRHttpRoomLoginReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpRoomLoginReformer.m; sourceTree = "<group>"; };
+		32F09AC51F6146BD00264EAC /* WVRHttpUserAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpUserAuth.h; sourceTree = "<group>"; };
+		32F09AC61F6146BD00264EAC /* WVRHttpUserAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpUserAuth.m; sourceTree = "<group>"; };
+		32F09AC71F6146BD00264EAC /* WVRHttpUserAuthReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpUserAuthReformer.h; sourceTree = "<group>"; };
+		32F09AC81F6146BD00264EAC /* WVRHttpUserAuthReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpUserAuthReformer.m; sourceTree = "<group>"; };
+		32F09ACA1F6146BD00264EAC /* WVRAuthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRAuthModel.h; sourceTree = "<group>"; };
+		32F09ACB1F6146BD00264EAC /* WVRAuthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRAuthModel.m; sourceTree = "<group>"; };
+		32F09ACC1F6146BD00264EAC /* WVRLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRLoginModel.h; sourceTree = "<group>"; };
+		32F09ACD1F6146BD00264EAC /* WVRLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRLoginModel.m; sourceTree = "<group>"; };
+		32F09ACE1F6146BD00264EAC /* WVRRoomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRRoomModel.h; sourceTree = "<group>"; };
+		32F09ACF1F6146BD00264EAC /* WVRRoomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRRoomModel.m; sourceTree = "<group>"; };
+		32F09AD21F6146BD00264EAC /* WVRWebSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRWebSocketClient.h; sourceTree = "<group>"; };
+		32F09AD31F6146BD00264EAC /* WVRWebSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRWebSocketClient.m; sourceTree = "<group>"; };
+		32F09AD41F6146BD00264EAC /* WVRWebSocketConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRWebSocketConfig.h; sourceTree = "<group>"; };
+		32F09AD51F6146BD00264EAC /* WVRWebSocketConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRWebSocketConfig.m; sourceTree = "<group>"; };
+		32F09AD61F6146BD00264EAC /* WVRWebSocketPrepare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRWebSocketPrepare.h; sourceTree = "<group>"; };
+		32F09AD71F6146BD00264EAC /* WVRWebSocketPrepare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRWebSocketPrepare.m; sourceTree = "<group>"; };
+		32F09AD81F6146BD00264EAC /* WVRWebSocketStatusDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRWebSocketStatusDelegate.h; sourceTree = "<group>"; };
+		32F09AD91F6146BD00264EAC /* WVRWebSocketStatusHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRWebSocketStatusHandle.h; sourceTree = "<group>"; };
+		32F09ADA1F6146BD00264EAC /* WVRWebSocketStatusHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRWebSocketStatusHandle.m; sourceTree = "<group>"; };
+		32F09AEC1F614FC500264EAC /* WVRApiHttpDanmuSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRApiHttpDanmuSend.h; sourceTree = "<group>"; };
+		32F09AED1F614FC500264EAC /* WVRApiHttpDanmuSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRApiHttpDanmuSend.m; sourceTree = "<group>"; };
+		32F09AEE1F614FC500264EAC /* WVRApiHttpDanmuSendReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRApiHttpDanmuSendReformer.h; sourceTree = "<group>"; };
+		32F09AEF1F614FC500264EAC /* WVRApiHttpDanmuSendReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRApiHttpDanmuSendReformer.m; sourceTree = "<group>"; };
+		32F09AF11F614FC500264EAC /* WVRHttpGuestUserAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpGuestUserAuth.h; sourceTree = "<group>"; };
+		32F09AF21F614FC500264EAC /* WVRHttpGuestUserAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpGuestUserAuth.m; sourceTree = "<group>"; };
+		32F09AF31F614FC500264EAC /* WVRHttpGuestUserAuthReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpGuestUserAuthReformer.h; sourceTree = "<group>"; };
+		32F09AF41F614FC500264EAC /* WVRHttpGuestUserAuthReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpGuestUserAuthReformer.m; sourceTree = "<group>"; };
+		5C4CF22B3970B7B84227B4E3 /* Pods-WVRDanmu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WVRDanmu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WVRDanmu/Pods-WVRDanmu.debug.xcconfig"; sourceTree = "<group>"; };
+		8D14E280DD3FC324EA642A9C /* Pods-WVRDanmu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WVRDanmu.release.xcconfig"; path = "Pods/Target Support Files/Pods-WVRDanmu/Pods-WVRDanmu.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32F09A831F61453500264EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A65B48DDCC32AE169FED6F /* libPods-WVRDanmu.a in Frameworks */,
+				A11482A41F6CFC8E00025655 /* SocketIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F09A9C1F61453500264EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F09AA71F61453500264EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3225DB631F6920E000425475 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				3225DB641F6920F100425475 /* Target_danmu.h */,
+				3225DB651F6920F100425475 /* Target_danmu.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		32CC26641F70FC67003FDBC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32CC26651F70FC67003FDBC4 /* WVRDanmuListView.h */,
+				32CC26661F70FC67003FDBC4 /* WVRDanmuListView.m */,
+				32CC266C1F710E1D003FDBC4 /* WVRLiveTextField.h */,
+				32CC266D1F710E1D003FDBC4 /* WVRLiveTextField.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32CC26681F71008A003FDBC4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				32CC26691F7100DD003FDBC4 /* WVRDamuController.h */,
+				32CC266A1F7100DD003FDBC4 /* WVRDamuController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		32F09A7D1F61453500264EAC = {
+			isa = PBXGroup;
+			children = (
+				32F09A881F61453500264EAC /* WVRDanmu */,
+				32F09AA21F61453500264EAC /* WVRDanmuTests */,
+				32F09AAD1F61453500264EAC /* WVRDanmuUITests */,
+				32F09A871F61453500264EAC /* Products */,
+				41613D2F78E124B1E02E945E /* Pods */,
+				6B48B4279979201AD3E61382 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32F09A871F61453500264EAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32F09A861F61453500264EAC /* WVRDanmu.app */,
+				32F09A9F1F61453500264EAC /* WVRDanmuTests.xctest */,
+				32F09AAA1F61453500264EAC /* WVRDanmuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32F09A881F61453500264EAC /* WVRDanmu */ = {
+			isa = PBXGroup;
+			children = (
+				32F09ABC1F6146BD00264EAC /* Classes */,
+				32F09A8C1F61453500264EAC /* AppDelegate.h */,
+				32F09A8D1F61453500264EAC /* AppDelegate.m */,
+				32F09A8F1F61453500264EAC /* ViewController.h */,
+				32F09A901F61453500264EAC /* ViewController.m */,
+				32F09A921F61453500264EAC /* Main.storyboard */,
+				32F09A951F61453500264EAC /* Assets.xcassets */,
+				32F09A971F61453500264EAC /* LaunchScreen.storyboard */,
+				32F09A9A1F61453500264EAC /* Info.plist */,
+				32F09A891F61453500264EAC /* Supporting Files */,
+			);
+			path = WVRDanmu;
+			sourceTree = "<group>";
+		};
+		32F09A891F61453500264EAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32F09A8A1F61453500264EAC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32F09AA21F61453500264EAC /* WVRDanmuTests */ = {
+			isa = PBXGroup;
+			children = (
+				32F09AA31F61453500264EAC /* WVRDanmuTests.m */,
+				32F09AA51F61453500264EAC /* Info.plist */,
+			);
+			path = WVRDanmuTests;
+			sourceTree = "<group>";
+		};
+		32F09AAD1F61453500264EAC /* WVRDanmuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32F09AAE1F61453500264EAC /* WVRDanmuUITests.m */,
+				32F09AB01F61453500264EAC /* Info.plist */,
+			);
+			path = WVRDanmuUITests;
+			sourceTree = "<group>";
+		};
+		32F09ABC1F6146BD00264EAC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				32CC26681F71008A003FDBC4 /* Controller */,
+				32CC26641F70FC67003FDBC4 /* View */,
+				3225DB631F6920E000425475 /* Public */,
+				32F09ABD1F6146BD00264EAC /* SocketIO */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		32F09ABD1F6146BD00264EAC /* SocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				32BAB02B1F62405900A69F2F /* SocketIO.framework */,
+				32F09AEB1F614FC500264EAC /* DanmuApi */,
+				32F09AF01F614FC500264EAC /* GuestUserAuth */,
+				32F09ABE1F6146BD00264EAC /* http */,
+				32F09AC91F6146BD00264EAC /* Model */,
+				32F09AD21F6146BD00264EAC /* WVRWebSocketClient.h */,
+				32F09AD31F6146BD00264EAC /* WVRWebSocketClient.m */,
+				32F09AD41F6146BD00264EAC /* WVRWebSocketConfig.h */,
+				32F09AD51F6146BD00264EAC /* WVRWebSocketConfig.m */,
+				32F09AD61F6146BD00264EAC /* WVRWebSocketPrepare.h */,
+				32F09AD71F6146BD00264EAC /* WVRWebSocketPrepare.m */,
+				32F09AD81F6146BD00264EAC /* WVRWebSocketStatusDelegate.h */,
+				32F09AD91F6146BD00264EAC /* WVRWebSocketStatusHandle.h */,
+				32F09ADA1F6146BD00264EAC /* WVRWebSocketStatusHandle.m */,
+			);
+			path = SocketIO;
+			sourceTree = "<group>";
+		};
+		32F09ABE1F6146BD00264EAC /* http */ = {
+			isa = PBXGroup;
+			children = (
+				32F09ABF1F6146BD00264EAC /* RoomLogin */,
+				32F09AC41F6146BD00264EAC /* UserAuth */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		32F09ABF1F6146BD00264EAC /* RoomLogin */ = {
+			isa = PBXGroup;
+			children = (
+				32F09AC01F6146BD00264EAC /* WVRHttpRoomLogin.h */,
+				32F09AC11F6146BD00264EAC /* WVRHttpRoomLogin.m */,
+				32F09AC21F6146BD00264EAC /* WVRHttpRoomLoginReformer.h */,
+				32F09AC31F6146BD00264EAC /* WVRHttpRoomLoginReformer.m */,
+			);
+			path = RoomLogin;
+			sourceTree = "<group>";
+		};
+		32F09AC41F6146BD00264EAC /* UserAuth */ = {
+			isa = PBXGroup;
+			children = (
+				32F09AC51F6146BD00264EAC /* WVRHttpUserAuth.h */,
+				32F09AC61F6146BD00264EAC /* WVRHttpUserAuth.m */,
+				32F09AC71F6146BD00264EAC /* WVRHttpUserAuthReformer.h */,
+				32F09AC81F6146BD00264EAC /* WVRHttpUserAuthReformer.m */,
+			);
+			path = UserAuth;
+			sourceTree = "<group>";
+		};
+		32F09AC91F6146BD00264EAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32F09ACA1F6146BD00264EAC /* WVRAuthModel.h */,
+				32F09ACB1F6146BD00264EAC /* WVRAuthModel.m */,
+				32F09ACC1F6146BD00264EAC /* WVRLoginModel.h */,
+				32F09ACD1F6146BD00264EAC /* WVRLoginModel.m */,
+				32F09ACE1F6146BD00264EAC /* WVRRoomModel.h */,
+				32F09ACF1F6146BD00264EAC /* WVRRoomModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32F09AEB1F614FC500264EAC /* DanmuApi */ = {
+			isa = PBXGroup;
+			children = (
+				32F09AEC1F614FC500264EAC /* WVRApiHttpDanmuSend.h */,
+				32F09AED1F614FC500264EAC /* WVRApiHttpDanmuSend.m */,
+				32F09AEE1F614FC500264EAC /* WVRApiHttpDanmuSendReformer.h */,
+				32F09AEF1F614FC500264EAC /* WVRApiHttpDanmuSendReformer.m */,
+			);
+			path = DanmuApi;
+			sourceTree = "<group>";
+		};
+		32F09AF01F614FC500264EAC /* GuestUserAuth */ = {
+			isa = PBXGroup;
+			children = (
+				32F09AF11F614FC500264EAC /* WVRHttpGuestUserAuth.h */,
+				32F09AF21F614FC500264EAC /* WVRHttpGuestUserAuth.m */,
+				32F09AF31F614FC500264EAC /* WVRHttpGuestUserAuthReformer.h */,
+				32F09AF41F614FC500264EAC /* WVRHttpGuestUserAuthReformer.m */,
+			);
+			path = GuestUserAuth;
+			sourceTree = "<group>";
+		};
+		41613D2F78E124B1E02E945E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C4CF22B3970B7B84227B4E3 /* Pods-WVRDanmu.debug.xcconfig */,
+				8D14E280DD3FC324EA642A9C /* Pods-WVRDanmu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B48B4279979201AD3E61382 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DCC1DDE2E41638D902C9C08 /* libPods-WVRDanmu.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32F09A851F61453500264EAC /* WVRDanmu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F09AB31F61453500264EAC /* Build configuration list for PBXNativeTarget "WVRDanmu" */;
+			buildPhases = (
+				9286DD41A087309DCBE5BBC5 /* [CP] Check Pods Manifest.lock */,
+				32F09A821F61453500264EAC /* Sources */,
+				32F09A831F61453500264EAC /* Frameworks */,
+				32F09A841F61453500264EAC /* Resources */,
+				81E3B0883B380B0AB9E3A218 /* [CP] Embed Pods Frameworks */,
+				9A5570D47EA2429039B3ECA9 /* [CP] Copy Pods Resources */,
+				A11482A61F6CFC8E00025655 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WVRDanmu;
+			productName = WVRDanmu;
+			productReference = 32F09A861F61453500264EAC /* WVRDanmu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32F09A9E1F61453500264EAC /* WVRDanmuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F09AB61F61453500264EAC /* Build configuration list for PBXNativeTarget "WVRDanmuTests" */;
+			buildPhases = (
+				32F09A9B1F61453500264EAC /* Sources */,
+				32F09A9C1F61453500264EAC /* Frameworks */,
+				32F09A9D1F61453500264EAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32F09AA11F61453500264EAC /* PBXTargetDependency */,
+			);
+			name = WVRDanmuTests;
+			productName = WVRDanmuTests;
+			productReference = 32F09A9F1F61453500264EAC /* WVRDanmuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32F09AA91F61453500264EAC /* WVRDanmuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F09AB91F61453500264EAC /* Build configuration list for PBXNativeTarget "WVRDanmuUITests" */;
+			buildPhases = (
+				32F09AA61F61453500264EAC /* Sources */,
+				32F09AA71F61453500264EAC /* Frameworks */,
+				32F09AA81F61453500264EAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32F09AAC1F61453500264EAC /* PBXTargetDependency */,
+			);
+			name = WVRDanmuUITests;
+			productName = WVRDanmuUITests;
+			productReference = 32F09AAA1F61453500264EAC /* WVRDanmuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32F09A7E1F61453500264EAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = snailvr;
+				TargetAttributes = {
+					32F09A851F61453500264EAC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = L6EYUBTRJ5;
+						ProvisioningStyle = Automatic;
+					};
+					32F09A9E1F61453500264EAC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = L6EYUBTRJ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 32F09A851F61453500264EAC;
+					};
+					32F09AA91F61453500264EAC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = L6EYUBTRJ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 32F09A851F61453500264EAC;
+					};
+				};
+			};
+			buildConfigurationList = 32F09A811F61453500264EAC /* Build configuration list for PBXProject "WVRDanmu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32F09A7D1F61453500264EAC;
+			productRefGroup = 32F09A871F61453500264EAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32F09A851F61453500264EAC /* WVRDanmu */,
+				32F09A9E1F61453500264EAC /* WVRDanmuTests */,
+				32F09AA91F61453500264EAC /* WVRDanmuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32F09A841F61453500264EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F09A991F61453500264EAC /* LaunchScreen.storyboard in Resources */,
+				32F09A961F61453500264EAC /* Assets.xcassets in Resources */,
+				32F09A941F61453500264EAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F09A9D1F61453500264EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F09AA81F61453500264EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81E3B0883B380B0AB9E3A218 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WVRDanmu/Pods-WVRDanmu-frameworks.sh",
+				"${PODS_ROOT}/WVRImage/WVRImage/Classes/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WVRDanmu/Pods-WVRDanmu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9286DD41A087309DCBE5BBC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WVRDanmu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A5570D47EA2429039B3ECA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WVRDanmu/Pods-WVRDanmu-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+				"${PODS_ROOT}/WVRUtil/WVRUtil/Classes/nation.db",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/Base/WVRBaseEmptyView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/Base/WVRBaseErrorView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/Base/WVRBaseNullView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/SQView/SQEmbedHorCollectionCell/SQEmbedHorCollectionCell.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/SQView/SQNavTitleView/SQNavTitleView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/SQView/SQNextStepCell.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/SQView/SQSegmentView/SQSegmentView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/SQView/SQTFInputCell.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/WVRDeleteFooterView/WVRDeleteFooterView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/WVRPageView/WVRPageView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/WVRSQDownView/WVRSQDownView.xib",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WVRDanmu/Pods-WVRDanmu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32F09A821F61453500264EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F09A911F61453500264EAC /* ViewController.m in Sources */,
+				32F09A8E1F61453500264EAC /* AppDelegate.m in Sources */,
+				32F09AE01F6146BD00264EAC /* WVRHttpUserAuth.m in Sources */,
+				32F09AE61F6146BD00264EAC /* WVRWebSocketClient.m in Sources */,
+				32F09AE21F6146BD00264EAC /* WVRAuthModel.m in Sources */,
+				32F09AE71F6146BD00264EAC /* WVRWebSocketConfig.m in Sources */,
+				32F09ADE1F6146BD00264EAC /* WVRHttpRoomLogin.m in Sources */,
+				32F09AE11F6146BD00264EAC /* WVRHttpUserAuthReformer.m in Sources */,
+				32CC266B1F7100DD003FDBC4 /* WVRDamuController.m in Sources */,
+				32CC266E1F710E1D003FDBC4 /* WVRLiveTextField.m in Sources */,
+				32F09AF61F614FC500264EAC /* WVRApiHttpDanmuSendReformer.m in Sources */,
+				32F09AF81F614FC500264EAC /* WVRHttpGuestUserAuthReformer.m in Sources */,
+				32F09AE91F6146BD00264EAC /* WVRWebSocketStatusHandle.m in Sources */,
+				32F09AF51F614FC500264EAC /* WVRApiHttpDanmuSend.m in Sources */,
+				32F09ADF1F6146BD00264EAC /* WVRHttpRoomLoginReformer.m in Sources */,
+				32F09AE31F6146BD00264EAC /* WVRLoginModel.m in Sources */,
+				32F09AE41F6146BD00264EAC /* WVRRoomModel.m in Sources */,
+				32F09A8B1F61453500264EAC /* main.m in Sources */,
+				32CC26671F70FC67003FDBC4 /* WVRDanmuListView.m in Sources */,
+				3225DB661F6920F100425475 /* Target_danmu.m in Sources */,
+				32F09AE81F6146BD00264EAC /* WVRWebSocketPrepare.m in Sources */,
+				32F09AF71F614FC500264EAC /* WVRHttpGuestUserAuth.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F09A9B1F61453500264EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F09AA41F61453500264EAC /* WVRDanmuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F09AA61F61453500264EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F09AAF1F61453500264EAC /* WVRDanmuUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32F09AA11F61453500264EAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32F09A851F61453500264EAC /* WVRDanmu */;
+			targetProxy = 32F09AA01F61453500264EAC /* PBXContainerItemProxy */;
+		};
+		32F09AAC1F61453500264EAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32F09A851F61453500264EAC /* WVRDanmu */;
+			targetProxy = 32F09AAB1F61453500264EAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32F09A921F61453500264EAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F09A931F61453500264EAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32F09A971F61453500264EAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F09A981F61453500264EAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32F09AB11F61453500264EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32F09AB21F61453500264EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32F09AB41F61453500264EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4CF22B3970B7B84227B4E3 /* Pods-WVRDanmu.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WVRDanmu/Classes/SocketIO",
+				);
+				INFOPLIST_FILE = WVRDanmu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRDanmu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32F09AB51F61453500264EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D14E280DD3FC324EA642A9C /* Pods-WVRDanmu.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WVRDanmu/Classes/SocketIO",
+				);
+				INFOPLIST_FILE = WVRDanmu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRDanmu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32F09AB71F61453500264EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRDanmuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRDanmuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WVRDanmu.app/WVRDanmu";
+			};
+			name = Debug;
+		};
+		32F09AB81F61453500264EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRDanmuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRDanmuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WVRDanmu.app/WVRDanmu";
+			};
+			name = Release;
+		};
+		32F09ABA1F61453500264EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRDanmuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRDanmuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WVRDanmu;
+			};
+			name = Debug;
+		};
+		32F09ABB1F61453500264EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRDanmuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRDanmuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WVRDanmu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32F09A811F61453500264EAC /* Build configuration list for PBXProject "WVRDanmu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F09AB11F61453500264EAC /* Debug */,
+				32F09AB21F61453500264EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F09AB31F61453500264EAC /* Build configuration list for PBXNativeTarget "WVRDanmu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F09AB41F61453500264EAC /* Debug */,
+				32F09AB51F61453500264EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F09AB61F61453500264EAC /* Build configuration list for PBXNativeTarget "WVRDanmuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F09AB71F61453500264EAC /* Debug */,
+				32F09AB81F61453500264EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F09AB91F61453500264EAC /* Build configuration list for PBXNativeTarget "WVRDanmuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F09ABA1F61453500264EAC /* Debug */,
+				32F09ABB1F61453500264EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32F09A7E1F61453500264EAC /* Project object */;
+}

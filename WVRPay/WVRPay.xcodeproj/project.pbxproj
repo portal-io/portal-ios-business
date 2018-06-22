@@ -1,0 +1,1617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29410EC7E54E754B71F9CB56 /* libPods-WVRPay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 305AD1C1283725069E454CDB /* libPods-WVRPay.a */; };
+		327171A91F6BE937000569AF /* WVRAppInPurchaseResultUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 327170D91F6BE937000569AF /* WVRAppInPurchaseResultUseCase.m */; };
+		327171AA1F6BE937000569AF /* WVRHttpApiAppInPurchaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 327170DD1F6BE937000569AF /* WVRHttpApiAppInPurchaseResult.m */; };
+		327171AB1F6BE937000569AF /* WVRHttpAppInPurchaseResultReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 327170DF1F6BE937000569AF /* WVRHttpAppInPurchaseResultReformer.m */; };
+		327171AC1F6BE937000569AF /* WVRHttpCheckDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 327170E31F6BE937000569AF /* WVRHttpCheckDevice.m */; };
+		327171AD1F6BE937000569AF /* WVRCheckDeviceUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 327170E61F6BE937000569AF /* WVRCheckDeviceUseCase.m */; };
+		327171AE1F6BE937000569AF /* WVRCheckGoodsPayedUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 327170EC1F6BE937000569AF /* WVRCheckGoodsPayedUseCase.m */; };
+		327171AF1F6BE937000569AF /* WVRHttpApiCheckGoodsPayedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 327170F01F6BE937000569AF /* WVRHttpApiCheckGoodsPayedList.m */; };
+		327171B01F6BE937000569AF /* WVRHttpCheckGoodsPayedListReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 327170F21F6BE937000569AF /* WVRHttpCheckGoodsPayedListReformer.m */; };
+		327171B11F6BE937000569AF /* WVRModelGoodsPayed.m in Sources */ = {isa = PBXBuildFile; fileRef = 327170F41F6BE937000569AF /* WVRModelGoodsPayed.m */; };
+		327171B21F6BE937000569AF /* WVRCheckPayUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 327170F81F6BE937000569AF /* WVRCheckPayUseCase.m */; };
+		327171B31F6BE937000569AF /* WVRApiHttpCheckPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 327170FC1F6BE937000569AF /* WVRApiHttpCheckPay.m */; };
+		327171B41F6BE937000569AF /* WVRCreateOrderUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171001F6BE937000569AF /* WVRCreateOrderUseCase.m */; };
+		327171B51F6BE937000569AF /* WVRApiHttpCreateOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171041F6BE937000569AF /* WVRApiHttpCreateOrder.m */; };
+		327171B61F6BE937000569AF /* WVRHttpCreateOrderReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171061F6BE937000569AF /* WVRHttpCreateOrderReformer.m */; };
+		327171B71F6BE937000569AF /* WVRHttpModelCreateOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171081F6BE937000569AF /* WVRHttpModelCreateOrder.m */; };
+		327171B81F6BE937000569AF /* WVROrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271710A1F6BE937000569AF /* WVROrderModel.m */; };
+		327171B91F6BE937000569AF /* WVRCreateOrderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271710D1F6BE937000569AF /* WVRCreateOrderViewModel.m */; };
+		327171BA1F6BE937000569AF /* WVRMyOrderItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171101F6BE937000569AF /* WVRMyOrderItemModel.m */; };
+		327171BB1F6BE937000569AF /* WVRMyTicketListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171121F6BE937000569AF /* WVRMyTicketListModel.m */; };
+		327171BC1F6BE937000569AF /* WVRPayBIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171151F6BE937000569AF /* WVRPayBIModel.m */; };
+		327171BD1F6BE937000569AF /* WVRRedeemCodeExchangeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171171F6BE937000569AF /* WVRRedeemCodeExchangeModel.m */; };
+		327171BE1F6BE937000569AF /* WVRUnExchangeCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171191F6BE937000569AF /* WVRUnExchangeCodeModel.m */; };
+		327171BF1F6BE937000569AF /* WVRUserTicketListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271711B1F6BE937000569AF /* WVRUserTicketListModel.m */; };
+		327171C01F6BE937000569AF /* WVRMyOrderListUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271711F1F6BE937000569AF /* WVRMyOrderListUseCase.m */; };
+		327171C11F6BE937000569AF /* WVRApiHttpMyOrderList.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171231F6BE937000569AF /* WVRApiHttpMyOrderList.m */; };
+		327171C21F6BE937000569AF /* WVRMyOrderListReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171251F6BE937000569AF /* WVRMyOrderListReformer.m */; };
+		327171C31F6BE937000569AF /* WVRMyOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171281F6BE937000569AF /* WVRMyOrderVC.m */; };
+		327171C41F6BE937000569AF /* WVRMyOrderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271712B1F6BE937000569AF /* WVRMyOrderViewModel.m */; };
+		327171C51F6BE937000569AF /* WVRMyTicketUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271712F1F6BE937000569AF /* WVRMyTicketUseCase.m */; };
+		327171C61F6BE937000569AF /* WVRApiHttpMyTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171321F6BE937000569AF /* WVRApiHttpMyTicket.m */; };
+		327171C71F6BE937000569AF /* WVRMyTicketReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171341F6BE937000569AF /* WVRMyTicketReformer.m */; };
+		327171C81F6BE937000569AF /* WVRMyTicketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171371F6BE937000569AF /* WVRMyTicketVC.m */; };
+		327171C91F6BE937000569AF /* WVRTicketDetailListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171391F6BE937000569AF /* WVRTicketDetailListVC.m */; };
+		327171CA1F6BE937000569AF /* WVRMyTicketViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271713C1F6BE937000569AF /* WVRMyTicketViewModel.m */; };
+		327171CB1F6BE937000569AF /* WVRPayCallbackUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171401F6BE937000569AF /* WVRPayCallbackUseCase.m */; };
+		327171CC1F6BE937000569AF /* WVRApiHttpPayCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171441F6BE937000569AF /* WVRApiHttpPayCallback.m */; };
+		327171CD1F6BE937000569AF /* WVRHttpModelPayCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171461F6BE937000569AF /* WVRHttpModelPayCallback.m */; };
+		327171CE1F6BE937000569AF /* WVRPaymentListUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271714A1F6BE937000569AF /* WVRPaymentListUseCase.m */; };
+		327171CF1F6BE937000569AF /* WVRHttpApiPaymentList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271714E1F6BE937000569AF /* WVRHttpApiPaymentList.m */; };
+		327171D01F6BE937000569AF /* WVRHttpPaymentListReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171501F6BE937000569AF /* WVRHttpPaymentListReformer.m */; };
+		327171D11F6BE937000569AF /* WVRModelPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171521F6BE937000569AF /* WVRModelPayment.m */; };
+		327171D21F6BE937000569AF /* WVRHttpPayMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171561F6BE937000569AF /* WVRHttpPayMethod.m */; };
+		327171D31F6BE937000569AF /* WVRPayMethodUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171591F6BE937000569AF /* WVRPayMethodUseCase.m */; };
+		327171E51F6BE937000569AF /* Target_pay.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171891F6BE937000569AF /* Target_pay.m */; };
+		327171E61F6BE937000569AF /* WVRHttpPayReportDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271718D1F6BE937000569AF /* WVRHttpPayReportDevice.m */; };
+		327171E71F6BE937000569AF /* WVRPayReportDeviceUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171901F6BE937000569AF /* WVRPayReportDeviceUseCase.m */; };
+		327171E81F6BE937000569AF /* WVRUnityPaymentTempVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171941F6BE937000569AF /* WVRUnityPaymentTempVC.m */; };
+		327171E91F6BE937000569AF /* WVRUnityTempLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171971F6BE937000569AF /* WVRUnityTempLiveView.m */; };
+		327171EA1F6BE937000569AF /* WVRUnityTempTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171991F6BE937000569AF /* WVRUnityTempTopicView.m */; };
+		327171EB1F6BE937000569AF /* WVRUnityTempVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271719B1F6BE937000569AF /* WVRUnityTempVideoView.m */; };
+		327171EC1F6BE937000569AF /* WVRExchangeSuccessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271719E1F6BE937000569AF /* WVRExchangeSuccessView.m */; };
+		327171ED1F6BE937000569AF /* WVRMyOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171A01F6BE937000569AF /* WVRMyOrderCell.m */; };
+		327171EE1F6BE937000569AF /* WVRMyRedeemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171A21F6BE937000569AF /* WVRMyRedeemCell.m */; };
+		327171EF1F6BE937000569AF /* WVRMyTicketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171A41F6BE937000569AF /* WVRMyTicketCell.m */; };
+		327171F01F6BE937000569AF /* WVRPurchaseDetailListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171A61F6BE937000569AF /* WVRPurchaseDetailListCell.m */; };
+		327171F11F6BE937000569AF /* WVRRedeemExchangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171A81F6BE937000569AF /* WVRRedeemExchangeView.m */; };
+		32867E461F5CEF1C007AFA6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32867E451F5CEF1C007AFA6F /* main.m */; };
+		32867E491F5CEF1C007AFA6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32867E481F5CEF1C007AFA6F /* AppDelegate.m */; };
+		32867E4C1F5CEF1C007AFA6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32867E4B1F5CEF1C007AFA6F /* ViewController.m */; };
+		32867E4F1F5CEF1C007AFA6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32867E4D1F5CEF1C007AFA6F /* Main.storyboard */; };
+		32867E511F5CEF1C007AFA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32867E501F5CEF1C007AFA6F /* Assets.xcassets */; };
+		32867E541F5CEF1C007AFA6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32867E521F5CEF1C007AFA6F /* LaunchScreen.storyboard */; };
+		32867E5F1F5CEF1C007AFA6F /* WVRPayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32867E5E1F5CEF1C007AFA6F /* WVRPayTests.m */; };
+		32867E6A1F5CEF1C007AFA6F /* WVRPayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32867E691F5CEF1C007AFA6F /* WVRPayUITests.m */; };
+		32CC26421F6D222D003FDBC4 /* WXWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CC26411F6D222D003FDBC4 /* WXWeChatSDK.a */; };
+		32E2C3F31F6CE51700D16F19 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32E2C3CA1F6CE51700D16F19 /* AlipaySDK.bundle */; };
+		32E2C3F41F6CE51700D16F19 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E2C3CB1F6CE51700D16F19 /* AlipaySDK.framework */; };
+		32E2C3F51F6CE51700D16F19 /* ipaynow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32E2C3CD1F6CE51700D16F19 /* ipaynow.bundle */; };
+		32E2C3F61F6CE51700D16F19 /* libIPaynowPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E2C3D11F6CE51700D16F19 /* libIPaynowPlugin.a */; };
+		32E2C3F71F6CE51700D16F19 /* WVRExchangeTicketModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2C3D71F6CE51700D16F19 /* WVRExchangeTicketModel.m */; };
+		32E2C3F81F6CE51700D16F19 /* WVRPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2C3D91F6CE51700D16F19 /* WVRPayModel.m */; };
+		32E2C3F91F6CE51700D16F19 /* WVROrderActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2C3DC1F6CE51700D16F19 /* WVROrderActionSheet.m */; };
+		32E2C3FA1F6CE51700D16F19 /* WVROrderSheetHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2C3DE1F6CE51700D16F19 /* WVROrderSheetHeaderView.m */; };
+		32E2C3FB1F6CE51700D16F19 /* WVRPayCallbackLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2C3E01F6CE51700D16F19 /* WVRPayCallbackLoadingView.m */; };
+		32E2C3FC1F6CE51700D16F19 /* WVRPayCallbackLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E2C3E11F6CE51700D16F19 /* WVRPayCallbackLoadingView.xib */; };
+		32E2C3FD1F6CE51700D16F19 /* WVRCheckPayHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2C3E31F6CE51700D16F19 /* WVRCheckPayHandler.m */; };
+		32E2C3FE1F6CE51700D16F19 /* WVRInAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2C3E51F6CE51700D16F19 /* WVRInAppPurchaseManager.m */; };
+		32E2C3FF1F6CE51700D16F19 /* WVRPayCallbackHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2C3E71F6CE51700D16F19 /* WVRPayCallbackHandler.m */; };
+		32E2C4001F6CE51700D16F19 /* WVRPayCreateOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2C3E91F6CE51700D16F19 /* WVRPayCreateOrder.m */; };
+		32E2C4011F6CE51700D16F19 /* WVRPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2C3ED1F6CE51700D16F19 /* WVRPayManager.m */; };
+		32E2C4041F6CE84900D16F19 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E2C4031F6CE84900D16F19 /* libc++.tbd */; };
+		32E2C4061F6CE89400D16F19 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E2C4051F6CE89400D16F19 /* libz.tbd */; };
+		32E2C4081F6CE90700D16F19 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E2C4071F6CE90700D16F19 /* CoreMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32867E5B1F5CEF1C007AFA6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32867E391F5CEF1B007AFA6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32867E401F5CEF1B007AFA6F;
+			remoteInfo = WVRPay;
+		};
+		32867E661F5CEF1C007AFA6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32867E391F5CEF1B007AFA6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32867E401F5CEF1B007AFA6F;
+			remoteInfo = WVRPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		305AD1C1283725069E454CDB /* libPods-WVRPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WVRPay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		327170D81F6BE937000569AF /* WVRAppInPurchaseResultUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRAppInPurchaseResultUseCase.h; sourceTree = "<group>"; };
+		327170D91F6BE937000569AF /* WVRAppInPurchaseResultUseCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRAppInPurchaseResultUseCase.m; sourceTree = "<group>"; };
+		327170DC1F6BE937000569AF /* WVRHttpApiAppInPurchaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpApiAppInPurchaseResult.h; sourceTree = "<group>"; };
+		327170DD1F6BE937000569AF /* WVRHttpApiAppInPurchaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpApiAppInPurchaseResult.m; sourceTree = "<group>"; };
+		327170DE1F6BE937000569AF /* WVRHttpAppInPurchaseResultReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpAppInPurchaseResultReformer.h; sourceTree = "<group>"; };
+		327170DF1F6BE937000569AF /* WVRHttpAppInPurchaseResultReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpAppInPurchaseResultReformer.m; sourceTree = "<group>"; };
+		327170E21F6BE937000569AF /* WVRHttpCheckDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpCheckDevice.h; sourceTree = "<group>"; };
+		327170E31F6BE937000569AF /* WVRHttpCheckDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpCheckDevice.m; sourceTree = "<group>"; };
+		327170E51F6BE937000569AF /* WVRCheckDeviceUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRCheckDeviceUseCase.h; sourceTree = "<group>"; };
+		327170E61F6BE937000569AF /* WVRCheckDeviceUseCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRCheckDeviceUseCase.m; sourceTree = "<group>"; };
+		327170EB1F6BE937000569AF /* WVRCheckGoodsPayedUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRCheckGoodsPayedUseCase.h; sourceTree = "<group>"; };
+		327170EC1F6BE937000569AF /* WVRCheckGoodsPayedUseCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRCheckGoodsPayedUseCase.m; sourceTree = "<group>"; };
+		327170EF1F6BE937000569AF /* WVRHttpApiCheckGoodsPayedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpApiCheckGoodsPayedList.h; sourceTree = "<group>"; };
+		327170F01F6BE937000569AF /* WVRHttpApiCheckGoodsPayedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpApiCheckGoodsPayedList.m; sourceTree = "<group>"; };
+		327170F11F6BE937000569AF /* WVRHttpCheckGoodsPayedListReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpCheckGoodsPayedListReformer.h; sourceTree = "<group>"; };
+		327170F21F6BE937000569AF /* WVRHttpCheckGoodsPayedListReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpCheckGoodsPayedListReformer.m; sourceTree = "<group>"; };
+		327170F31F6BE937000569AF /* WVRModelGoodsPayed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRModelGoodsPayed.h; sourceTree = "<group>"; };
+		327170F41F6BE937000569AF /* WVRModelGoodsPayed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRModelGoodsPayed.m; sourceTree = "<group>"; };
+		327170F71F6BE937000569AF /* WVRCheckPayUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRCheckPayUseCase.h; sourceTree = "<group>"; };
+		327170F81F6BE937000569AF /* WVRCheckPayUseCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRCheckPayUseCase.m; sourceTree = "<group>"; };
+		327170FB1F6BE937000569AF /* WVRApiHttpCheckPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRApiHttpCheckPay.h; sourceTree = "<group>"; };
+		327170FC1F6BE937000569AF /* WVRApiHttpCheckPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRApiHttpCheckPay.m; sourceTree = "<group>"; };
+		327170FF1F6BE937000569AF /* WVRCreateOrderUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRCreateOrderUseCase.h; sourceTree = "<group>"; };
+		327171001F6BE937000569AF /* WVRCreateOrderUseCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRCreateOrderUseCase.m; sourceTree = "<group>"; };
+		327171031F6BE937000569AF /* WVRApiHttpCreateOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRApiHttpCreateOrder.h; sourceTree = "<group>"; };
+		327171041F6BE937000569AF /* WVRApiHttpCreateOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRApiHttpCreateOrder.m; sourceTree = "<group>"; };
+		327171051F6BE937000569AF /* WVRHttpCreateOrderReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpCreateOrderReformer.h; sourceTree = "<group>"; };
+		327171061F6BE937000569AF /* WVRHttpCreateOrderReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpCreateOrderReformer.m; sourceTree = "<group>"; };
+		327171071F6BE937000569AF /* WVRHttpModelCreateOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpModelCreateOrder.h; sourceTree = "<group>"; };
+		327171081F6BE937000569AF /* WVRHttpModelCreateOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpModelCreateOrder.m; sourceTree = "<group>"; };
+		327171091F6BE937000569AF /* WVROrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVROrderModel.h; sourceTree = "<group>"; };
+		3271710A1F6BE937000569AF /* WVROrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVROrderModel.m; sourceTree = "<group>"; };
+		3271710C1F6BE937000569AF /* WVRCreateOrderViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRCreateOrderViewModel.h; sourceTree = "<group>"; };
+		3271710D1F6BE937000569AF /* WVRCreateOrderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRCreateOrderViewModel.m; sourceTree = "<group>"; };
+		3271710F1F6BE937000569AF /* WVRMyOrderItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRMyOrderItemModel.h; sourceTree = "<group>"; };
+		327171101F6BE937000569AF /* WVRMyOrderItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRMyOrderItemModel.m; sourceTree = "<group>"; };
+		327171111F6BE937000569AF /* WVRMyTicketListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRMyTicketListModel.h; sourceTree = "<group>"; };
+		327171121F6BE937000569AF /* WVRMyTicketListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRMyTicketListModel.m; sourceTree = "<group>"; };
+		327171131F6BE937000569AF /* WVROrderPurchaseHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVROrderPurchaseHeader.h; sourceTree = "<group>"; };
+		327171141F6BE937000569AF /* WVRPayBIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPayBIModel.h; sourceTree = "<group>"; };
+		327171151F6BE937000569AF /* WVRPayBIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRPayBIModel.m; sourceTree = "<group>"; };
+		327171161F6BE937000569AF /* WVRRedeemCodeExchangeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRRedeemCodeExchangeModel.h; sourceTree = "<group>"; };
+		327171171F6BE937000569AF /* WVRRedeemCodeExchangeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRRedeemCodeExchangeModel.m; sourceTree = "<group>"; };
+		327171181F6BE937000569AF /* WVRUnExchangeCodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRUnExchangeCodeModel.h; sourceTree = "<group>"; };
+		327171191F6BE937000569AF /* WVRUnExchangeCodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRUnExchangeCodeModel.m; sourceTree = "<group>"; };
+		3271711A1F6BE937000569AF /* WVRUserTicketListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRUserTicketListModel.h; sourceTree = "<group>"; };
+		3271711B1F6BE937000569AF /* WVRUserTicketListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRUserTicketListModel.m; sourceTree = "<group>"; };
+		3271711E1F6BE937000569AF /* WVRMyOrderListUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRMyOrderListUseCase.h; sourceTree = "<group>"; };
+		3271711F1F6BE937000569AF /* WVRMyOrderListUseCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRMyOrderListUseCase.m; sourceTree = "<group>"; };
+		327171221F6BE937000569AF /* WVRApiHttpMyOrderList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRApiHttpMyOrderList.h; sourceTree = "<group>"; };
+		327171231F6BE937000569AF /* WVRApiHttpMyOrderList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRApiHttpMyOrderList.m; sourceTree = "<group>"; };
+		327171241F6BE937000569AF /* WVRMyOrderListReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRMyOrderListReformer.h; sourceTree = "<group>"; };
+		327171251F6BE937000569AF /* WVRMyOrderListReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRMyOrderListReformer.m; sourceTree = "<group>"; };
+		327171271F6BE937000569AF /* WVRMyOrderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRMyOrderVC.h; sourceTree = "<group>"; };
+		327171281F6BE937000569AF /* WVRMyOrderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRMyOrderVC.m; sourceTree = "<group>"; };
+		3271712A1F6BE937000569AF /* WVRMyOrderViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRMyOrderViewModel.h; sourceTree = "<group>"; };
+		3271712B1F6BE937000569AF /* WVRMyOrderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRMyOrderViewModel.m; sourceTree = "<group>"; };
+		3271712E1F6BE937000569AF /* WVRMyTicketUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRMyTicketUseCase.h; sourceTree = "<group>"; };
+		3271712F1F6BE937000569AF /* WVRMyTicketUseCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRMyTicketUseCase.m; sourceTree = "<group>"; };
+		327171311F6BE937000569AF /* WVRApiHttpMyTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRApiHttpMyTicket.h; sourceTree = "<group>"; };
+		327171321F6BE937000569AF /* WVRApiHttpMyTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRApiHttpMyTicket.m; sourceTree = "<group>"; };
+		327171331F6BE937000569AF /* WVRMyTicketReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRMyTicketReformer.h; sourceTree = "<group>"; };
+		327171341F6BE937000569AF /* WVRMyTicketReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRMyTicketReformer.m; sourceTree = "<group>"; };
+		327171361F6BE937000569AF /* WVRMyTicketVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRMyTicketVC.h; sourceTree = "<group>"; };
+		327171371F6BE937000569AF /* WVRMyTicketVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRMyTicketVC.m; sourceTree = "<group>"; };
+		327171381F6BE937000569AF /* WVRTicketDetailListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRTicketDetailListVC.h; sourceTree = "<group>"; };
+		327171391F6BE937000569AF /* WVRTicketDetailListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRTicketDetailListVC.m; sourceTree = "<group>"; };
+		3271713B1F6BE937000569AF /* WVRMyTicketViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRMyTicketViewModel.h; sourceTree = "<group>"; };
+		3271713C1F6BE937000569AF /* WVRMyTicketViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRMyTicketViewModel.m; sourceTree = "<group>"; };
+		3271713F1F6BE937000569AF /* WVRPayCallbackUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPayCallbackUseCase.h; sourceTree = "<group>"; };
+		327171401F6BE937000569AF /* WVRPayCallbackUseCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRPayCallbackUseCase.m; sourceTree = "<group>"; };
+		327171431F6BE937000569AF /* WVRApiHttpPayCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRApiHttpPayCallback.h; sourceTree = "<group>"; };
+		327171441F6BE937000569AF /* WVRApiHttpPayCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRApiHttpPayCallback.m; sourceTree = "<group>"; };
+		327171451F6BE937000569AF /* WVRHttpModelPayCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpModelPayCallback.h; sourceTree = "<group>"; };
+		327171461F6BE937000569AF /* WVRHttpModelPayCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpModelPayCallback.m; sourceTree = "<group>"; };
+		327171491F6BE937000569AF /* WVRPaymentListUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPaymentListUseCase.h; sourceTree = "<group>"; };
+		3271714A1F6BE937000569AF /* WVRPaymentListUseCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRPaymentListUseCase.m; sourceTree = "<group>"; };
+		3271714D1F6BE937000569AF /* WVRHttpApiPaymentList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpApiPaymentList.h; sourceTree = "<group>"; };
+		3271714E1F6BE937000569AF /* WVRHttpApiPaymentList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpApiPaymentList.m; sourceTree = "<group>"; };
+		3271714F1F6BE937000569AF /* WVRHttpPaymentListReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpPaymentListReformer.h; sourceTree = "<group>"; };
+		327171501F6BE937000569AF /* WVRHttpPaymentListReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpPaymentListReformer.m; sourceTree = "<group>"; };
+		327171511F6BE937000569AF /* WVRModelPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRModelPayment.h; sourceTree = "<group>"; };
+		327171521F6BE937000569AF /* WVRModelPayment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRModelPayment.m; sourceTree = "<group>"; };
+		327171551F6BE937000569AF /* WVRHttpPayMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpPayMethod.h; sourceTree = "<group>"; };
+		327171561F6BE937000569AF /* WVRHttpPayMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpPayMethod.m; sourceTree = "<group>"; };
+		327171581F6BE937000569AF /* WVRPayMethodUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPayMethodUseCase.h; sourceTree = "<group>"; };
+		327171591F6BE937000569AF /* WVRPayMethodUseCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRPayMethodUseCase.m; sourceTree = "<group>"; };
+		327171881F6BE937000569AF /* Target_pay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_pay.h; sourceTree = "<group>"; };
+		327171891F6BE937000569AF /* Target_pay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_pay.m; sourceTree = "<group>"; };
+		3271718C1F6BE937000569AF /* WVRHttpPayReportDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpPayReportDevice.h; sourceTree = "<group>"; };
+		3271718D1F6BE937000569AF /* WVRHttpPayReportDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpPayReportDevice.m; sourceTree = "<group>"; };
+		3271718F1F6BE937000569AF /* WVRPayReportDeviceUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPayReportDeviceUseCase.h; sourceTree = "<group>"; };
+		327171901F6BE937000569AF /* WVRPayReportDeviceUseCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRPayReportDeviceUseCase.m; sourceTree = "<group>"; };
+		327171931F6BE937000569AF /* WVRUnityPaymentTempVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRUnityPaymentTempVC.h; sourceTree = "<group>"; };
+		327171941F6BE937000569AF /* WVRUnityPaymentTempVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRUnityPaymentTempVC.m; sourceTree = "<group>"; };
+		327171961F6BE937000569AF /* WVRUnityTempLiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRUnityTempLiveView.h; sourceTree = "<group>"; };
+		327171971F6BE937000569AF /* WVRUnityTempLiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRUnityTempLiveView.m; sourceTree = "<group>"; };
+		327171981F6BE937000569AF /* WVRUnityTempTopicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRUnityTempTopicView.h; sourceTree = "<group>"; };
+		327171991F6BE937000569AF /* WVRUnityTempTopicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRUnityTempTopicView.m; sourceTree = "<group>"; };
+		3271719A1F6BE937000569AF /* WVRUnityTempVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRUnityTempVideoView.h; sourceTree = "<group>"; };
+		3271719B1F6BE937000569AF /* WVRUnityTempVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRUnityTempVideoView.m; sourceTree = "<group>"; };
+		3271719D1F6BE937000569AF /* WVRExchangeSuccessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRExchangeSuccessView.h; sourceTree = "<group>"; };
+		3271719E1F6BE937000569AF /* WVRExchangeSuccessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRExchangeSuccessView.m; sourceTree = "<group>"; };
+		3271719F1F6BE937000569AF /* WVRMyOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRMyOrderCell.h; sourceTree = "<group>"; };
+		327171A01F6BE937000569AF /* WVRMyOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRMyOrderCell.m; sourceTree = "<group>"; };
+		327171A11F6BE937000569AF /* WVRMyRedeemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRMyRedeemCell.h; sourceTree = "<group>"; };
+		327171A21F6BE937000569AF /* WVRMyRedeemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRMyRedeemCell.m; sourceTree = "<group>"; };
+		327171A31F6BE937000569AF /* WVRMyTicketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRMyTicketCell.h; sourceTree = "<group>"; };
+		327171A41F6BE937000569AF /* WVRMyTicketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRMyTicketCell.m; sourceTree = "<group>"; };
+		327171A51F6BE937000569AF /* WVRPurchaseDetailListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPurchaseDetailListCell.h; sourceTree = "<group>"; };
+		327171A61F6BE937000569AF /* WVRPurchaseDetailListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRPurchaseDetailListCell.m; sourceTree = "<group>"; };
+		327171A71F6BE937000569AF /* WVRRedeemExchangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRRedeemExchangeView.h; sourceTree = "<group>"; };
+		327171A81F6BE937000569AF /* WVRRedeemExchangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRRedeemExchangeView.m; sourceTree = "<group>"; };
+		327171F21F6BF3C0000569AF /* WVRPayPrefixHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPayPrefixHeader.h; sourceTree = "<group>"; };
+		32867E411F5CEF1B007AFA6F /* WVRPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WVRPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32867E451F5CEF1C007AFA6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32867E471F5CEF1C007AFA6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32867E481F5CEF1C007AFA6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32867E4A1F5CEF1C007AFA6F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		32867E4B1F5CEF1C007AFA6F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		32867E4E1F5CEF1C007AFA6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32867E501F5CEF1C007AFA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32867E531F5CEF1C007AFA6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32867E551F5CEF1C007AFA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32867E5A1F5CEF1C007AFA6F /* WVRPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WVRPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32867E5E1F5CEF1C007AFA6F /* WVRPayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRPayTests.m; sourceTree = "<group>"; };
+		32867E601F5CEF1C007AFA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32867E651F5CEF1C007AFA6F /* WVRPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WVRPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32867E691F5CEF1C007AFA6F /* WVRPayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRPayUITests.m; sourceTree = "<group>"; };
+		32867E6B1F5CEF1C007AFA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32CC26411F6D222D003FDBC4 /* WXWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = WXWeChatSDK.a; sourceTree = "<group>"; };
+		32E2C3CA1F6CE51700D16F19 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		32E2C3CB1F6CE51700D16F19 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		32E2C3CD1F6CE51700D16F19 /* ipaynow.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ipaynow.bundle; sourceTree = "<group>"; };
+		32E2C3CE1F6CE51700D16F19 /* IpaynowPluginApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpaynowPluginApi.h; sourceTree = "<group>"; };
+		32E2C3CF1F6CE51700D16F19 /* IpaynowPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpaynowPluginDelegate.h; sourceTree = "<group>"; };
+		32E2C3D11F6CE51700D16F19 /* libIPaynowPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIPaynowPlugin.a; sourceTree = "<group>"; };
+		32E2C3D21F6CE51700D16F19 /* IPNDESUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPNDESUtil.h; sourceTree = "<group>"; };
+		32E2C3D31F6CE51700D16F19 /* IPNPreSignMessageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPNPreSignMessageUtil.h; sourceTree = "<group>"; };
+		32E2C3D61F6CE51700D16F19 /* WVRExchangeTicketModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRExchangeTicketModel.h; sourceTree = "<group>"; };
+		32E2C3D71F6CE51700D16F19 /* WVRExchangeTicketModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRExchangeTicketModel.m; sourceTree = "<group>"; };
+		32E2C3D81F6CE51700D16F19 /* WVRPayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPayModel.h; sourceTree = "<group>"; };
+		32E2C3D91F6CE51700D16F19 /* WVRPayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRPayModel.m; sourceTree = "<group>"; };
+		32E2C3DB1F6CE51700D16F19 /* WVROrderActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVROrderActionSheet.h; sourceTree = "<group>"; };
+		32E2C3DC1F6CE51700D16F19 /* WVROrderActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVROrderActionSheet.m; sourceTree = "<group>"; };
+		32E2C3DD1F6CE51700D16F19 /* WVROrderSheetHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVROrderSheetHeaderView.h; sourceTree = "<group>"; };
+		32E2C3DE1F6CE51700D16F19 /* WVROrderSheetHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVROrderSheetHeaderView.m; sourceTree = "<group>"; };
+		32E2C3DF1F6CE51700D16F19 /* WVRPayCallbackLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPayCallbackLoadingView.h; sourceTree = "<group>"; };
+		32E2C3E01F6CE51700D16F19 /* WVRPayCallbackLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRPayCallbackLoadingView.m; sourceTree = "<group>"; };
+		32E2C3E11F6CE51700D16F19 /* WVRPayCallbackLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WVRPayCallbackLoadingView.xib; sourceTree = "<group>"; };
+		32E2C3E21F6CE51700D16F19 /* WVRCheckPayHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRCheckPayHandler.h; sourceTree = "<group>"; };
+		32E2C3E31F6CE51700D16F19 /* WVRCheckPayHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRCheckPayHandler.m; sourceTree = "<group>"; };
+		32E2C3E41F6CE51700D16F19 /* WVRInAppPurchaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRInAppPurchaseManager.h; sourceTree = "<group>"; };
+		32E2C3E51F6CE51700D16F19 /* WVRInAppPurchaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRInAppPurchaseManager.m; sourceTree = "<group>"; };
+		32E2C3E61F6CE51700D16F19 /* WVRPayCallbackHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPayCallbackHandler.h; sourceTree = "<group>"; };
+		32E2C3E71F6CE51700D16F19 /* WVRPayCallbackHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRPayCallbackHandler.m; sourceTree = "<group>"; };
+		32E2C3E81F6CE51700D16F19 /* WVRPayCreateOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPayCreateOrder.h; sourceTree = "<group>"; };
+		32E2C3E91F6CE51700D16F19 /* WVRPayCreateOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRPayCreateOrder.m; sourceTree = "<group>"; };
+		32E2C3EA1F6CE51700D16F19 /* WVRPayGoodsType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPayGoodsType.h; sourceTree = "<group>"; };
+		32E2C3EB1F6CE51700D16F19 /* WVRPayHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPayHeader.h; sourceTree = "<group>"; };
+		32E2C3EC1F6CE51700D16F19 /* WVRPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPayManager.h; sourceTree = "<group>"; };
+		32E2C3ED1F6CE51700D16F19 /* WVRPayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRPayManager.m; sourceTree = "<group>"; };
+		32E2C3EE1F6CE51700D16F19 /* WVRPayStatusProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPayStatusProtocol.h; sourceTree = "<group>"; };
+		32E2C3F11F6CE51700D16F19 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		32E2C3F21F6CE51700D16F19 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		32E2C4031F6CE84900D16F19 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		32E2C4051F6CE89400D16F19 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		32E2C4071F6CE90700D16F19 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		797FE838CA64ED1EAEC2F07A /* Pods-WVRPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WVRPay.release.xcconfig"; path = "Pods/Target Support Files/Pods-WVRPay/Pods-WVRPay.release.xcconfig"; sourceTree = "<group>"; };
+		9CD23C16468839187801168B /* Pods-WVRPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WVRPay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WVRPay/Pods-WVRPay.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32867E3E1F5CEF1B007AFA6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E2C4081F6CE90700D16F19 /* CoreMotion.framework in Frameworks */,
+				32CC26421F6D222D003FDBC4 /* WXWeChatSDK.a in Frameworks */,
+				32E2C4061F6CE89400D16F19 /* libz.tbd in Frameworks */,
+				32E2C4041F6CE84900D16F19 /* libc++.tbd in Frameworks */,
+				29410EC7E54E754B71F9CB56 /* libPods-WVRPay.a in Frameworks */,
+				32E2C3F41F6CE51700D16F19 /* AlipaySDK.framework in Frameworks */,
+				32E2C3F61F6CE51700D16F19 /* libIPaynowPlugin.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32867E571F5CEF1C007AFA6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32867E621F5CEF1C007AFA6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		327170D51F6BE937000569AF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				32E2C3C81F6CE51700D16F19 /* Plugin */,
+				327170D61F6BE937000569AF /* AppInPurchaseResult */,
+				327170E01F6BE937000569AF /* CheckDevice */,
+				327170E91F6BE937000569AF /* CheckGoodsPayedList */,
+				327170F51F6BE937000569AF /* CheckPay */,
+				327170FD1F6BE937000569AF /* CreateOrder */,
+				3271710E1F6BE937000569AF /* Model */,
+				3271711C1F6BE937000569AF /* MyOrder */,
+				3271712C1F6BE937000569AF /* MyTicket */,
+				3271713D1F6BE937000569AF /* PayCallback */,
+				327171471F6BE937000569AF /* PaymentList */,
+				327171531F6BE937000569AF /* PayMethod */,
+				327171871F6BE937000569AF /* Public */,
+				3271718A1F6BE937000569AF /* ReportDevice */,
+				327171911F6BE937000569AF /* UnityTmpVC */,
+				3271719C1F6BE937000569AF /* View */,
+				327171F21F6BF3C0000569AF /* WVRPayPrefixHeader.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		327170D61F6BE937000569AF /* AppInPurchaseResult */ = {
+			isa = PBXGroup;
+			children = (
+				327170D71F6BE937000569AF /* Interactor */,
+				327170DA1F6BE937000569AF /* Model */,
+			);
+			path = AppInPurchaseResult;
+			sourceTree = "<group>";
+		};
+		327170D71F6BE937000569AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				327170D81F6BE937000569AF /* WVRAppInPurchaseResultUseCase.h */,
+				327170D91F6BE937000569AF /* WVRAppInPurchaseResultUseCase.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		327170DA1F6BE937000569AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				327170DB1F6BE937000569AF /* http */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		327170DB1F6BE937000569AF /* http */ = {
+			isa = PBXGroup;
+			children = (
+				327170DC1F6BE937000569AF /* WVRHttpApiAppInPurchaseResult.h */,
+				327170DD1F6BE937000569AF /* WVRHttpApiAppInPurchaseResult.m */,
+				327170DE1F6BE937000569AF /* WVRHttpAppInPurchaseResultReformer.h */,
+				327170DF1F6BE937000569AF /* WVRHttpAppInPurchaseResultReformer.m */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		327170E01F6BE937000569AF /* CheckDevice */ = {
+			isa = PBXGroup;
+			children = (
+				327170E11F6BE937000569AF /* Http */,
+				327170E41F6BE937000569AF /* Interactor */,
+				327170E71F6BE937000569AF /* Model */,
+			);
+			path = CheckDevice;
+			sourceTree = "<group>";
+		};
+		327170E11F6BE937000569AF /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				327170E21F6BE937000569AF /* WVRHttpCheckDevice.h */,
+				327170E31F6BE937000569AF /* WVRHttpCheckDevice.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		327170E41F6BE937000569AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				327170E51F6BE937000569AF /* WVRCheckDeviceUseCase.h */,
+				327170E61F6BE937000569AF /* WVRCheckDeviceUseCase.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		327170E71F6BE937000569AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				327170E81F6BE937000569AF /* http */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		327170E81F6BE937000569AF /* http */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		327170E91F6BE937000569AF /* CheckGoodsPayedList */ = {
+			isa = PBXGroup;
+			children = (
+				327170EA1F6BE937000569AF /* Interactor */,
+				327170ED1F6BE937000569AF /* Model */,
+			);
+			path = CheckGoodsPayedList;
+			sourceTree = "<group>";
+		};
+		327170EA1F6BE937000569AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				327170EB1F6BE937000569AF /* WVRCheckGoodsPayedUseCase.h */,
+				327170EC1F6BE937000569AF /* WVRCheckGoodsPayedUseCase.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		327170ED1F6BE937000569AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				327170EE1F6BE937000569AF /* http */,
+				327170F31F6BE937000569AF /* WVRModelGoodsPayed.h */,
+				327170F41F6BE937000569AF /* WVRModelGoodsPayed.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		327170EE1F6BE937000569AF /* http */ = {
+			isa = PBXGroup;
+			children = (
+				327170EF1F6BE937000569AF /* WVRHttpApiCheckGoodsPayedList.h */,
+				327170F01F6BE937000569AF /* WVRHttpApiCheckGoodsPayedList.m */,
+				327170F11F6BE937000569AF /* WVRHttpCheckGoodsPayedListReformer.h */,
+				327170F21F6BE937000569AF /* WVRHttpCheckGoodsPayedListReformer.m */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		327170F51F6BE937000569AF /* CheckPay */ = {
+			isa = PBXGroup;
+			children = (
+				327170F61F6BE937000569AF /* Interactor */,
+				327170F91F6BE937000569AF /* Model */,
+			);
+			path = CheckPay;
+			sourceTree = "<group>";
+		};
+		327170F61F6BE937000569AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				327170F71F6BE937000569AF /* WVRCheckPayUseCase.h */,
+				327170F81F6BE937000569AF /* WVRCheckPayUseCase.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		327170F91F6BE937000569AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				327170FA1F6BE937000569AF /* http */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		327170FA1F6BE937000569AF /* http */ = {
+			isa = PBXGroup;
+			children = (
+				327170FB1F6BE937000569AF /* WVRApiHttpCheckPay.h */,
+				327170FC1F6BE937000569AF /* WVRApiHttpCheckPay.m */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		327170FD1F6BE937000569AF /* CreateOrder */ = {
+			isa = PBXGroup;
+			children = (
+				327170FE1F6BE937000569AF /* Interactor */,
+				327171011F6BE937000569AF /* Model */,
+				3271710B1F6BE937000569AF /* ViewModel */,
+			);
+			path = CreateOrder;
+			sourceTree = "<group>";
+		};
+		327170FE1F6BE937000569AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				327170FF1F6BE937000569AF /* WVRCreateOrderUseCase.h */,
+				327171001F6BE937000569AF /* WVRCreateOrderUseCase.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		327171011F6BE937000569AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				327171021F6BE937000569AF /* http */,
+				327171091F6BE937000569AF /* WVROrderModel.h */,
+				3271710A1F6BE937000569AF /* WVROrderModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		327171021F6BE937000569AF /* http */ = {
+			isa = PBXGroup;
+			children = (
+				327171031F6BE937000569AF /* WVRApiHttpCreateOrder.h */,
+				327171041F6BE937000569AF /* WVRApiHttpCreateOrder.m */,
+				327171051F6BE937000569AF /* WVRHttpCreateOrderReformer.h */,
+				327171061F6BE937000569AF /* WVRHttpCreateOrderReformer.m */,
+				327171071F6BE937000569AF /* WVRHttpModelCreateOrder.h */,
+				327171081F6BE937000569AF /* WVRHttpModelCreateOrder.m */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		3271710B1F6BE937000569AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3271710C1F6BE937000569AF /* WVRCreateOrderViewModel.h */,
+				3271710D1F6BE937000569AF /* WVRCreateOrderViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3271710E1F6BE937000569AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3271710F1F6BE937000569AF /* WVRMyOrderItemModel.h */,
+				327171101F6BE937000569AF /* WVRMyOrderItemModel.m */,
+				327171111F6BE937000569AF /* WVRMyTicketListModel.h */,
+				327171121F6BE937000569AF /* WVRMyTicketListModel.m */,
+				327171131F6BE937000569AF /* WVROrderPurchaseHeader.h */,
+				327171141F6BE937000569AF /* WVRPayBIModel.h */,
+				327171151F6BE937000569AF /* WVRPayBIModel.m */,
+				327171161F6BE937000569AF /* WVRRedeemCodeExchangeModel.h */,
+				327171171F6BE937000569AF /* WVRRedeemCodeExchangeModel.m */,
+				327171181F6BE937000569AF /* WVRUnExchangeCodeModel.h */,
+				327171191F6BE937000569AF /* WVRUnExchangeCodeModel.m */,
+				3271711A1F6BE937000569AF /* WVRUserTicketListModel.h */,
+				3271711B1F6BE937000569AF /* WVRUserTicketListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3271711C1F6BE937000569AF /* MyOrder */ = {
+			isa = PBXGroup;
+			children = (
+				3271711D1F6BE937000569AF /* Interactor */,
+				327171201F6BE937000569AF /* Model */,
+				327171261F6BE937000569AF /* ViewController */,
+				327171291F6BE937000569AF /* ViewModel */,
+			);
+			path = MyOrder;
+			sourceTree = "<group>";
+		};
+		3271711D1F6BE937000569AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3271711E1F6BE937000569AF /* WVRMyOrderListUseCase.h */,
+				3271711F1F6BE937000569AF /* WVRMyOrderListUseCase.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		327171201F6BE937000569AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				327171211F6BE937000569AF /* Http */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		327171211F6BE937000569AF /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				327171221F6BE937000569AF /* WVRApiHttpMyOrderList.h */,
+				327171231F6BE937000569AF /* WVRApiHttpMyOrderList.m */,
+				327171241F6BE937000569AF /* WVRMyOrderListReformer.h */,
+				327171251F6BE937000569AF /* WVRMyOrderListReformer.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		327171261F6BE937000569AF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				327171271F6BE937000569AF /* WVRMyOrderVC.h */,
+				327171281F6BE937000569AF /* WVRMyOrderVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		327171291F6BE937000569AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3271712A1F6BE937000569AF /* WVRMyOrderViewModel.h */,
+				3271712B1F6BE937000569AF /* WVRMyOrderViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3271712C1F6BE937000569AF /* MyTicket */ = {
+			isa = PBXGroup;
+			children = (
+				3271712D1F6BE937000569AF /* Interactor */,
+				327171301F6BE937000569AF /* Model */,
+				327171351F6BE937000569AF /* ViewController */,
+				3271713A1F6BE937000569AF /* ViewModel */,
+			);
+			path = MyTicket;
+			sourceTree = "<group>";
+		};
+		3271712D1F6BE937000569AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3271712E1F6BE937000569AF /* WVRMyTicketUseCase.h */,
+				3271712F1F6BE937000569AF /* WVRMyTicketUseCase.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		327171301F6BE937000569AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				327171311F6BE937000569AF /* WVRApiHttpMyTicket.h */,
+				327171321F6BE937000569AF /* WVRApiHttpMyTicket.m */,
+				327171331F6BE937000569AF /* WVRMyTicketReformer.h */,
+				327171341F6BE937000569AF /* WVRMyTicketReformer.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		327171351F6BE937000569AF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				327171361F6BE937000569AF /* WVRMyTicketVC.h */,
+				327171371F6BE937000569AF /* WVRMyTicketVC.m */,
+				327171381F6BE937000569AF /* WVRTicketDetailListVC.h */,
+				327171391F6BE937000569AF /* WVRTicketDetailListVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3271713A1F6BE937000569AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3271713B1F6BE937000569AF /* WVRMyTicketViewModel.h */,
+				3271713C1F6BE937000569AF /* WVRMyTicketViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3271713D1F6BE937000569AF /* PayCallback */ = {
+			isa = PBXGroup;
+			children = (
+				3271713E1F6BE937000569AF /* Interactor */,
+				327171411F6BE937000569AF /* Model */,
+			);
+			path = PayCallback;
+			sourceTree = "<group>";
+		};
+		3271713E1F6BE937000569AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3271713F1F6BE937000569AF /* WVRPayCallbackUseCase.h */,
+				327171401F6BE937000569AF /* WVRPayCallbackUseCase.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		327171411F6BE937000569AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				327171421F6BE937000569AF /* http */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		327171421F6BE937000569AF /* http */ = {
+			isa = PBXGroup;
+			children = (
+				327171431F6BE937000569AF /* WVRApiHttpPayCallback.h */,
+				327171441F6BE937000569AF /* WVRApiHttpPayCallback.m */,
+				327171451F6BE937000569AF /* WVRHttpModelPayCallback.h */,
+				327171461F6BE937000569AF /* WVRHttpModelPayCallback.m */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		327171471F6BE937000569AF /* PaymentList */ = {
+			isa = PBXGroup;
+			children = (
+				327171481F6BE937000569AF /* Interactor */,
+				3271714B1F6BE937000569AF /* Model */,
+			);
+			path = PaymentList;
+			sourceTree = "<group>";
+		};
+		327171481F6BE937000569AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				327171491F6BE937000569AF /* WVRPaymentListUseCase.h */,
+				3271714A1F6BE937000569AF /* WVRPaymentListUseCase.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3271714B1F6BE937000569AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3271714C1F6BE937000569AF /* http */,
+				327171511F6BE937000569AF /* WVRModelPayment.h */,
+				327171521F6BE937000569AF /* WVRModelPayment.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3271714C1F6BE937000569AF /* http */ = {
+			isa = PBXGroup;
+			children = (
+				3271714D1F6BE937000569AF /* WVRHttpApiPaymentList.h */,
+				3271714E1F6BE937000569AF /* WVRHttpApiPaymentList.m */,
+				3271714F1F6BE937000569AF /* WVRHttpPaymentListReformer.h */,
+				327171501F6BE937000569AF /* WVRHttpPaymentListReformer.m */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		327171531F6BE937000569AF /* PayMethod */ = {
+			isa = PBXGroup;
+			children = (
+				327171541F6BE937000569AF /* http */,
+				327171571F6BE937000569AF /* interactor */,
+			);
+			path = PayMethod;
+			sourceTree = "<group>";
+		};
+		327171541F6BE937000569AF /* http */ = {
+			isa = PBXGroup;
+			children = (
+				327171551F6BE937000569AF /* WVRHttpPayMethod.h */,
+				327171561F6BE937000569AF /* WVRHttpPayMethod.m */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		327171571F6BE937000569AF /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				327171581F6BE937000569AF /* WVRPayMethodUseCase.h */,
+				327171591F6BE937000569AF /* WVRPayMethodUseCase.m */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		327171871F6BE937000569AF /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				327171881F6BE937000569AF /* Target_pay.h */,
+				327171891F6BE937000569AF /* Target_pay.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		3271718A1F6BE937000569AF /* ReportDevice */ = {
+			isa = PBXGroup;
+			children = (
+				3271718B1F6BE937000569AF /* http */,
+				3271718E1F6BE937000569AF /* interactor */,
+			);
+			path = ReportDevice;
+			sourceTree = "<group>";
+		};
+		3271718B1F6BE937000569AF /* http */ = {
+			isa = PBXGroup;
+			children = (
+				3271718C1F6BE937000569AF /* WVRHttpPayReportDevice.h */,
+				3271718D1F6BE937000569AF /* WVRHttpPayReportDevice.m */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		3271718E1F6BE937000569AF /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3271718F1F6BE937000569AF /* WVRPayReportDeviceUseCase.h */,
+				327171901F6BE937000569AF /* WVRPayReportDeviceUseCase.m */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		327171911F6BE937000569AF /* UnityTmpVC */ = {
+			isa = PBXGroup;
+			children = (
+				327171921F6BE937000569AF /* Controller */,
+				327171951F6BE937000569AF /* TmpView */,
+			);
+			path = UnityTmpVC;
+			sourceTree = "<group>";
+		};
+		327171921F6BE937000569AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				327171931F6BE937000569AF /* WVRUnityPaymentTempVC.h */,
+				327171941F6BE937000569AF /* WVRUnityPaymentTempVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		327171951F6BE937000569AF /* TmpView */ = {
+			isa = PBXGroup;
+			children = (
+				327171961F6BE937000569AF /* WVRUnityTempLiveView.h */,
+				327171971F6BE937000569AF /* WVRUnityTempLiveView.m */,
+				327171981F6BE937000569AF /* WVRUnityTempTopicView.h */,
+				327171991F6BE937000569AF /* WVRUnityTempTopicView.m */,
+				3271719A1F6BE937000569AF /* WVRUnityTempVideoView.h */,
+				3271719B1F6BE937000569AF /* WVRUnityTempVideoView.m */,
+			);
+			path = TmpView;
+			sourceTree = "<group>";
+		};
+		3271719C1F6BE937000569AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3271719D1F6BE937000569AF /* WVRExchangeSuccessView.h */,
+				3271719E1F6BE937000569AF /* WVRExchangeSuccessView.m */,
+				3271719F1F6BE937000569AF /* WVRMyOrderCell.h */,
+				327171A01F6BE937000569AF /* WVRMyOrderCell.m */,
+				327171A11F6BE937000569AF /* WVRMyRedeemCell.h */,
+				327171A21F6BE937000569AF /* WVRMyRedeemCell.m */,
+				327171A31F6BE937000569AF /* WVRMyTicketCell.h */,
+				327171A41F6BE937000569AF /* WVRMyTicketCell.m */,
+				327171A51F6BE937000569AF /* WVRPurchaseDetailListCell.h */,
+				327171A61F6BE937000569AF /* WVRPurchaseDetailListCell.m */,
+				327171A71F6BE937000569AF /* WVRRedeemExchangeView.h */,
+				327171A81F6BE937000569AF /* WVRRedeemExchangeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32867E381F5CEF1B007AFA6F = {
+			isa = PBXGroup;
+			children = (
+				32867E431F5CEF1C007AFA6F /* WVRPay */,
+				32867E5D1F5CEF1C007AFA6F /* WVRPayTests */,
+				32867E681F5CEF1C007AFA6F /* WVRPayUITests */,
+				32867E421F5CEF1B007AFA6F /* Products */,
+				C4259F4ED8CFB5B6A98CD2D3 /* Pods */,
+				6A998F96EAB7E973275F8CA1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32867E421F5CEF1B007AFA6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32867E411F5CEF1B007AFA6F /* WVRPay.app */,
+				32867E5A1F5CEF1C007AFA6F /* WVRPayTests.xctest */,
+				32867E651F5CEF1C007AFA6F /* WVRPayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32867E431F5CEF1C007AFA6F /* WVRPay */ = {
+			isa = PBXGroup;
+			children = (
+				327170D51F6BE937000569AF /* Classes */,
+				32867E471F5CEF1C007AFA6F /* AppDelegate.h */,
+				32867E481F5CEF1C007AFA6F /* AppDelegate.m */,
+				32867E4A1F5CEF1C007AFA6F /* ViewController.h */,
+				32867E4B1F5CEF1C007AFA6F /* ViewController.m */,
+				32867E4D1F5CEF1C007AFA6F /* Main.storyboard */,
+				32867E501F5CEF1C007AFA6F /* Assets.xcassets */,
+				32867E521F5CEF1C007AFA6F /* LaunchScreen.storyboard */,
+				32867E551F5CEF1C007AFA6F /* Info.plist */,
+				32867E441F5CEF1C007AFA6F /* Supporting Files */,
+			);
+			path = WVRPay;
+			sourceTree = "<group>";
+		};
+		32867E441F5CEF1C007AFA6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32867E451F5CEF1C007AFA6F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32867E5D1F5CEF1C007AFA6F /* WVRPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				32867E5E1F5CEF1C007AFA6F /* WVRPayTests.m */,
+				32867E601F5CEF1C007AFA6F /* Info.plist */,
+			);
+			path = WVRPayTests;
+			sourceTree = "<group>";
+		};
+		32867E681F5CEF1C007AFA6F /* WVRPayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32867E691F5CEF1C007AFA6F /* WVRPayUITests.m */,
+				32867E6B1F5CEF1C007AFA6F /* Info.plist */,
+			);
+			path = WVRPayUITests;
+			sourceTree = "<group>";
+		};
+		32E2C3C81F6CE51700D16F19 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				32E2C3C91F6CE51700D16F19 /* AliPayPlugin */,
+				32E2C3CC1F6CE51700D16F19 /* IpaynowPlugin */,
+				32E2C3D41F6CE51700D16F19 /* PayManage */,
+				32E2C3EF1F6CE51700D16F19 /* WechatPlugin */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		32E2C3C91F6CE51700D16F19 /* AliPayPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				32E2C3CA1F6CE51700D16F19 /* AlipaySDK.bundle */,
+				32E2C3CB1F6CE51700D16F19 /* AlipaySDK.framework */,
+			);
+			path = AliPayPlugin;
+			sourceTree = "<group>";
+		};
+		32E2C3CC1F6CE51700D16F19 /* IpaynowPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				32E2C3CD1F6CE51700D16F19 /* ipaynow.bundle */,
+				32E2C3CE1F6CE51700D16F19 /* IpaynowPluginApi.h */,
+				32E2C3CF1F6CE51700D16F19 /* IpaynowPluginDelegate.h */,
+				32E2C3D01F6CE51700D16F19 /* iPhone+Simulator */,
+				32E2C3D21F6CE51700D16F19 /* IPNDESUtil.h */,
+				32E2C3D31F6CE51700D16F19 /* IPNPreSignMessageUtil.h */,
+			);
+			path = IpaynowPlugin;
+			sourceTree = "<group>";
+		};
+		32E2C3D01F6CE51700D16F19 /* iPhone+Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				32E2C3D11F6CE51700D16F19 /* libIPaynowPlugin.a */,
+			);
+			path = "iPhone+Simulator";
+			sourceTree = "<group>";
+		};
+		32E2C3D41F6CE51700D16F19 /* PayManage */ = {
+			isa = PBXGroup;
+			children = (
+				32E2C3D51F6CE51700D16F19 /* model */,
+				32E2C3DA1F6CE51700D16F19 /* view */,
+				32E2C3E21F6CE51700D16F19 /* WVRCheckPayHandler.h */,
+				32E2C3E31F6CE51700D16F19 /* WVRCheckPayHandler.m */,
+				32E2C3E41F6CE51700D16F19 /* WVRInAppPurchaseManager.h */,
+				32E2C3E51F6CE51700D16F19 /* WVRInAppPurchaseManager.m */,
+				32E2C3E61F6CE51700D16F19 /* WVRPayCallbackHandler.h */,
+				32E2C3E71F6CE51700D16F19 /* WVRPayCallbackHandler.m */,
+				32E2C3E81F6CE51700D16F19 /* WVRPayCreateOrder.h */,
+				32E2C3E91F6CE51700D16F19 /* WVRPayCreateOrder.m */,
+				32E2C3EA1F6CE51700D16F19 /* WVRPayGoodsType.h */,
+				32E2C3EB1F6CE51700D16F19 /* WVRPayHeader.h */,
+				32E2C3EC1F6CE51700D16F19 /* WVRPayManager.h */,
+				32E2C3ED1F6CE51700D16F19 /* WVRPayManager.m */,
+				32E2C3EE1F6CE51700D16F19 /* WVRPayStatusProtocol.h */,
+			);
+			path = PayManage;
+			sourceTree = "<group>";
+		};
+		32E2C3D51F6CE51700D16F19 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				32E2C3D61F6CE51700D16F19 /* WVRExchangeTicketModel.h */,
+				32E2C3D71F6CE51700D16F19 /* WVRExchangeTicketModel.m */,
+				32E2C3D81F6CE51700D16F19 /* WVRPayModel.h */,
+				32E2C3D91F6CE51700D16F19 /* WVRPayModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		32E2C3DA1F6CE51700D16F19 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				32E2C3DB1F6CE51700D16F19 /* WVROrderActionSheet.h */,
+				32E2C3DC1F6CE51700D16F19 /* WVROrderActionSheet.m */,
+				32E2C3DD1F6CE51700D16F19 /* WVROrderSheetHeaderView.h */,
+				32E2C3DE1F6CE51700D16F19 /* WVROrderSheetHeaderView.m */,
+				32E2C3DF1F6CE51700D16F19 /* WVRPayCallbackLoadingView.h */,
+				32E2C3E01F6CE51700D16F19 /* WVRPayCallbackLoadingView.m */,
+				32E2C3E11F6CE51700D16F19 /* WVRPayCallbackLoadingView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		32E2C3EF1F6CE51700D16F19 /* WechatPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				32CC26411F6D222D003FDBC4 /* WXWeChatSDK.a */,
+				32E2C3F11F6CE51700D16F19 /* WXApi.h */,
+				32E2C3F21F6CE51700D16F19 /* WXApiObject.h */,
+			);
+			path = WechatPlugin;
+			sourceTree = "<group>";
+		};
+		6A998F96EAB7E973275F8CA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32E2C4071F6CE90700D16F19 /* CoreMotion.framework */,
+				32E2C4051F6CE89400D16F19 /* libz.tbd */,
+				32E2C4031F6CE84900D16F19 /* libc++.tbd */,
+				305AD1C1283725069E454CDB /* libPods-WVRPay.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4259F4ED8CFB5B6A98CD2D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CD23C16468839187801168B /* Pods-WVRPay.debug.xcconfig */,
+				797FE838CA64ED1EAEC2F07A /* Pods-WVRPay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32867E401F5CEF1B007AFA6F /* WVRPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32867E6E1F5CEF1C007AFA6F /* Build configuration list for PBXNativeTarget "WVRPay" */;
+			buildPhases = (
+				71B4D36A7B89905C9D1993A8 /* [CP] Check Pods Manifest.lock */,
+				32867E3D1F5CEF1B007AFA6F /* Sources */,
+				32867E3E1F5CEF1B007AFA6F /* Frameworks */,
+				32867E3F1F5CEF1B007AFA6F /* Resources */,
+				9E156A232D78B2233100A4A1 /* [CP] Embed Pods Frameworks */,
+				0136B1B31CEF539C16A6595A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WVRPay;
+			productName = WVRPay;
+			productReference = 32867E411F5CEF1B007AFA6F /* WVRPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32867E591F5CEF1C007AFA6F /* WVRPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32867E711F5CEF1C007AFA6F /* Build configuration list for PBXNativeTarget "WVRPayTests" */;
+			buildPhases = (
+				32867E561F5CEF1C007AFA6F /* Sources */,
+				32867E571F5CEF1C007AFA6F /* Frameworks */,
+				32867E581F5CEF1C007AFA6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32867E5C1F5CEF1C007AFA6F /* PBXTargetDependency */,
+			);
+			name = WVRPayTests;
+			productName = WVRPayTests;
+			productReference = 32867E5A1F5CEF1C007AFA6F /* WVRPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32867E641F5CEF1C007AFA6F /* WVRPayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32867E741F5CEF1C007AFA6F /* Build configuration list for PBXNativeTarget "WVRPayUITests" */;
+			buildPhases = (
+				32867E611F5CEF1C007AFA6F /* Sources */,
+				32867E621F5CEF1C007AFA6F /* Frameworks */,
+				32867E631F5CEF1C007AFA6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32867E671F5CEF1C007AFA6F /* PBXTargetDependency */,
+			);
+			name = WVRPayUITests;
+			productName = WVRPayUITests;
+			productReference = 32867E651F5CEF1C007AFA6F /* WVRPayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32867E391F5CEF1B007AFA6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = snailvr;
+				TargetAttributes = {
+					32867E401F5CEF1B007AFA6F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = L6EYUBTRJ5;
+						ProvisioningStyle = Automatic;
+					};
+					32867E591F5CEF1C007AFA6F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = L6EYUBTRJ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 32867E401F5CEF1B007AFA6F;
+					};
+					32867E641F5CEF1C007AFA6F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = L6EYUBTRJ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 32867E401F5CEF1B007AFA6F;
+					};
+				};
+			};
+			buildConfigurationList = 32867E3C1F5CEF1B007AFA6F /* Build configuration list for PBXProject "WVRPay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32867E381F5CEF1B007AFA6F;
+			productRefGroup = 32867E421F5CEF1B007AFA6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32867E401F5CEF1B007AFA6F /* WVRPay */,
+				32867E591F5CEF1C007AFA6F /* WVRPayTests */,
+				32867E641F5CEF1C007AFA6F /* WVRPayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32867E3F1F5CEF1B007AFA6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32867E541F5CEF1C007AFA6F /* LaunchScreen.storyboard in Resources */,
+				32E2C3F51F6CE51700D16F19 /* ipaynow.bundle in Resources */,
+				32867E511F5CEF1C007AFA6F /* Assets.xcassets in Resources */,
+				32E2C3F31F6CE51700D16F19 /* AlipaySDK.bundle in Resources */,
+				32867E4F1F5CEF1C007AFA6F /* Main.storyboard in Resources */,
+				32E2C3FC1F6CE51700D16F19 /* WVRPayCallbackLoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32867E581F5CEF1C007AFA6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32867E631F5CEF1C007AFA6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0136B1B31CEF539C16A6595A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WVRPay/Pods-WVRPay-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+				"${PODS_ROOT}/WVRUtil/WVRUtil/Classes/nation.db",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/Base/WVRBaseEmptyView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/Base/WVRBaseErrorView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/Base/WVRBaseNullView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/SQView/SQEmbedHorCollectionCell/SQEmbedHorCollectionCell.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/SQView/SQNavTitleView/SQNavTitleView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/SQView/SQNextStepCell.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/SQView/SQSegmentView/SQSegmentView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/SQView/SQTFInputCell.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/WVRDeleteFooterView/WVRDeleteFooterView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/WVRPageView/WVRPageView.xib",
+				"${PODS_ROOT}/WVRWidget/WVRWidget/Core/WVRSQDownView/WVRSQDownView.xib",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WVRPay/Pods-WVRPay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71B4D36A7B89905C9D1993A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WVRPay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E156A232D78B2233100A4A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WVRPay/Pods-WVRPay-frameworks.sh",
+				"${PODS_ROOT}/WVRImage/WVRImage/Classes/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WVRPay/Pods-WVRPay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32867E3D1F5CEF1B007AFA6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327171BA1F6BE937000569AF /* WVRMyOrderItemModel.m in Sources */,
+				327171D01F6BE937000569AF /* WVRHttpPaymentListReformer.m in Sources */,
+				327171CB1F6BE937000569AF /* WVRPayCallbackUseCase.m in Sources */,
+				32E2C3F81F6CE51700D16F19 /* WVRPayModel.m in Sources */,
+				327171C51F6BE937000569AF /* WVRMyTicketUseCase.m in Sources */,
+				32E2C3FB1F6CE51700D16F19 /* WVRPayCallbackLoadingView.m in Sources */,
+				327171E91F6BE937000569AF /* WVRUnityTempLiveView.m in Sources */,
+				327171EC1F6BE937000569AF /* WVRExchangeSuccessView.m in Sources */,
+				327171EB1F6BE937000569AF /* WVRUnityTempVideoView.m in Sources */,
+				327171ED1F6BE937000569AF /* WVRMyOrderCell.m in Sources */,
+				327171E71F6BE937000569AF /* WVRPayReportDeviceUseCase.m in Sources */,
+				327171AD1F6BE937000569AF /* WVRCheckDeviceUseCase.m in Sources */,
+				327171AC1F6BE937000569AF /* WVRHttpCheckDevice.m in Sources */,
+				327171C61F6BE937000569AF /* WVRApiHttpMyTicket.m in Sources */,
+				327171C21F6BE937000569AF /* WVRMyOrderListReformer.m in Sources */,
+				327171E81F6BE937000569AF /* WVRUnityPaymentTempVC.m in Sources */,
+				327171BE1F6BE937000569AF /* WVRUnExchangeCodeModel.m in Sources */,
+				327171B21F6BE937000569AF /* WVRCheckPayUseCase.m in Sources */,
+				327171C11F6BE937000569AF /* WVRApiHttpMyOrderList.m in Sources */,
+				32E2C3F91F6CE51700D16F19 /* WVROrderActionSheet.m in Sources */,
+				327171CC1F6BE937000569AF /* WVRApiHttpPayCallback.m in Sources */,
+				327171F11F6BE937000569AF /* WVRRedeemExchangeView.m in Sources */,
+				32E2C3FF1F6CE51700D16F19 /* WVRPayCallbackHandler.m in Sources */,
+				32E2C4011F6CE51700D16F19 /* WVRPayManager.m in Sources */,
+				327171B91F6BE937000569AF /* WVRCreateOrderViewModel.m in Sources */,
+				327171C81F6BE937000569AF /* WVRMyTicketVC.m in Sources */,
+				327171BF1F6BE937000569AF /* WVRUserTicketListModel.m in Sources */,
+				327171C41F6BE937000569AF /* WVRMyOrderViewModel.m in Sources */,
+				32E2C3FA1F6CE51700D16F19 /* WVROrderSheetHeaderView.m in Sources */,
+				327171C91F6BE937000569AF /* WVRTicketDetailListVC.m in Sources */,
+				327171D31F6BE937000569AF /* WVRPayMethodUseCase.m in Sources */,
+				327171B81F6BE937000569AF /* WVROrderModel.m in Sources */,
+				327171B11F6BE937000569AF /* WVRModelGoodsPayed.m in Sources */,
+				327171BC1F6BE937000569AF /* WVRPayBIModel.m in Sources */,
+				327171CD1F6BE937000569AF /* WVRHttpModelPayCallback.m in Sources */,
+				327171AA1F6BE937000569AF /* WVRHttpApiAppInPurchaseResult.m in Sources */,
+				327171A91F6BE937000569AF /* WVRAppInPurchaseResultUseCase.m in Sources */,
+				327171EE1F6BE937000569AF /* WVRMyRedeemCell.m in Sources */,
+				327171B31F6BE937000569AF /* WVRApiHttpCheckPay.m in Sources */,
+				327171CA1F6BE937000569AF /* WVRMyTicketViewModel.m in Sources */,
+				327171D21F6BE937000569AF /* WVRHttpPayMethod.m in Sources */,
+				327171E51F6BE937000569AF /* Target_pay.m in Sources */,
+				327171AE1F6BE937000569AF /* WVRCheckGoodsPayedUseCase.m in Sources */,
+				327171CF1F6BE937000569AF /* WVRHttpApiPaymentList.m in Sources */,
+				32867E4C1F5CEF1C007AFA6F /* ViewController.m in Sources */,
+				32E2C3FE1F6CE51700D16F19 /* WVRInAppPurchaseManager.m in Sources */,
+				327171F01F6BE937000569AF /* WVRPurchaseDetailListCell.m in Sources */,
+				327171E61F6BE937000569AF /* WVRHttpPayReportDevice.m in Sources */,
+				32867E491F5CEF1C007AFA6F /* AppDelegate.m in Sources */,
+				327171AB1F6BE937000569AF /* WVRHttpAppInPurchaseResultReformer.m in Sources */,
+				327171B51F6BE937000569AF /* WVRApiHttpCreateOrder.m in Sources */,
+				327171BB1F6BE937000569AF /* WVRMyTicketListModel.m in Sources */,
+				327171C01F6BE937000569AF /* WVRMyOrderListUseCase.m in Sources */,
+				327171EF1F6BE937000569AF /* WVRMyTicketCell.m in Sources */,
+				327171B61F6BE937000569AF /* WVRHttpCreateOrderReformer.m in Sources */,
+				327171EA1F6BE937000569AF /* WVRUnityTempTopicView.m in Sources */,
+				327171B01F6BE937000569AF /* WVRHttpCheckGoodsPayedListReformer.m in Sources */,
+				32E2C3FD1F6CE51700D16F19 /* WVRCheckPayHandler.m in Sources */,
+				32E2C3F71F6CE51700D16F19 /* WVRExchangeTicketModel.m in Sources */,
+				327171AF1F6BE937000569AF /* WVRHttpApiCheckGoodsPayedList.m in Sources */,
+				32E2C4001F6CE51700D16F19 /* WVRPayCreateOrder.m in Sources */,
+				327171B41F6BE937000569AF /* WVRCreateOrderUseCase.m in Sources */,
+				327171B71F6BE937000569AF /* WVRHttpModelCreateOrder.m in Sources */,
+				327171D11F6BE937000569AF /* WVRModelPayment.m in Sources */,
+				32867E461F5CEF1C007AFA6F /* main.m in Sources */,
+				327171BD1F6BE937000569AF /* WVRRedeemCodeExchangeModel.m in Sources */,
+				327171CE1F6BE937000569AF /* WVRPaymentListUseCase.m in Sources */,
+				327171C31F6BE937000569AF /* WVRMyOrderVC.m in Sources */,
+				327171C71F6BE937000569AF /* WVRMyTicketReformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32867E561F5CEF1C007AFA6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32867E5F1F5CEF1C007AFA6F /* WVRPayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32867E611F5CEF1C007AFA6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32867E6A1F5CEF1C007AFA6F /* WVRPayUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32867E5C1F5CEF1C007AFA6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32867E401F5CEF1B007AFA6F /* WVRPay */;
+			targetProxy = 32867E5B1F5CEF1C007AFA6F /* PBXContainerItemProxy */;
+		};
+		32867E671F5CEF1C007AFA6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32867E401F5CEF1B007AFA6F /* WVRPay */;
+			targetProxy = 32867E661F5CEF1C007AFA6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32867E4D1F5CEF1C007AFA6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32867E4E1F5CEF1C007AFA6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32867E521F5CEF1C007AFA6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32867E531F5CEF1C007AFA6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32867E6C1F5CEF1C007AFA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32867E6D1F5CEF1C007AFA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32867E6F1F5CEF1C007AFA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CD23C16468839187801168B /* Pods-WVRPay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WVRPay/Classes/Plugin/AliPayPlugin",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WVRPay/Classes/WVRPayPrefixHeader.h;
+				INFOPLIST_FILE = WVRPay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WVRPay/Classes/Plugin/IpaynowPlugin/iPhone+Simulator",
+					"$(PROJECT_DIR)/WVRPay/Classes/Plugin/WechatPlugin",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32867E701F5CEF1C007AFA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 797FE838CA64ED1EAEC2F07A /* Pods-WVRPay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WVRPay/Classes/Plugin/AliPayPlugin",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WVRPay/Classes/WVRPayPrefixHeader.h;
+				INFOPLIST_FILE = WVRPay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WVRPay/Classes/Plugin/IpaynowPlugin/iPhone+Simulator",
+					"$(PROJECT_DIR)/WVRPay/Classes/Plugin/WechatPlugin",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32867E721F5CEF1C007AFA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WVRPay.app/WVRPay";
+			};
+			name = Debug;
+		};
+		32867E731F5CEF1C007AFA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WVRPay.app/WVRPay";
+			};
+			name = Release;
+		};
+		32867E751F5CEF1C007AFA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRPayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WVRPay;
+			};
+			name = Debug;
+		};
+		32867E761F5CEF1C007AFA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRPayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WVRPay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32867E3C1F5CEF1B007AFA6F /* Build configuration list for PBXProject "WVRPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32867E6C1F5CEF1C007AFA6F /* Debug */,
+				32867E6D1F5CEF1C007AFA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32867E6E1F5CEF1C007AFA6F /* Build configuration list for PBXNativeTarget "WVRPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32867E6F1F5CEF1C007AFA6F /* Debug */,
+				32867E701F5CEF1C007AFA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32867E711F5CEF1C007AFA6F /* Build configuration list for PBXNativeTarget "WVRPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32867E721F5CEF1C007AFA6F /* Debug */,
+				32867E731F5CEF1C007AFA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32867E741F5CEF1C007AFA6F /* Build configuration list for PBXNativeTarget "WVRPayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32867E751F5CEF1C007AFA6F /* Debug */,
+				32867E761F5CEF1C007AFA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32867E391F5CEF1B007AFA6F /* Project object */;
+}

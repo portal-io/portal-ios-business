@@ -1,0 +1,26 @@
+#use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://git.moretv.cn/whaley-vr-ios-midware/WVRPodSpecs.git'
+source 'https://git.moretv.cn/whaley-vr-ios-lib/WVRPodSpecs.git'
+
+platform :ios, "9.0"
+inhibit_all_warnings!
+
+target 'WVRAccount' do
+    pod 'ReactiveObjC',                 '~> 3.0.0'
+    pod 'FMDB',                     '~> 2.0'
+    pod 'WVRAppContext',   '~> 0.1.2'
+    pod 'WVRMediator'
+    pod 'WVRNet',           '~> 0.1.7'
+    pod 'WVRUIFrame',       '~> 0.0.2'
+    
+    pod 'WVRApiServers',      '~> 0.0.1'
+    pod 'WVRImage',                     '~> 1.1.0'
+    pod 'WVRCache',                     '~> 0.0.2'
+    pod 'WVRShare',                     '~> 0.0.2'
+    pod 'UMengAnalytics-NO-IDFA',       '~> 4.2.5'
+    pod 'WVRUtil',                      '~> 0.0.1'
+    pod 'WVRBI',                        '~> 0.0.1'
+    pod 'WVRInteractor',                '~> 0.0.1'
+    pod 'WVRWidget',                    '~> 0.3.5'
+end

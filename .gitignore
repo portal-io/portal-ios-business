@@ -1,0 +1,12 @@
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+*/Podfile.lock
+*/Pods/
+*/*.xcodeproj/project.xcworkspace/xcuserdata/land.xcuserdatad/
+*/*.xcodeproj/xcuserdata/land.xcuserdatad/
+*/*.xcworkspace/
+WVRSocketIO/WVRSocketIO/Debug-iphoneos/
+WVRSocketIO/WVRSocketIO/Debug-iphonesimulator/
+WVRSocketIO/WVRSocketIO/WVRSocketIO.build/
+WVRSocketIO/build/
