@@ -90,8 +90,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  # s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -108,8 +108,137 @@ Pod::Spec.new do |s|
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
+  s.subspec 'WVRDanmu' do |cur|
+    cur.source_files = 'WVRDanmu/WVRDanmu/Classes/**/*.{h,m}'
+    # s.vendored_frameworks = ['WVRDanmu/WVRDanmu/Classes/SocketIO/SocketIO.framework']
 
+    cur.requires_arc = true
+    # s.pod_target_xcconfig = { "OTHER_LDFLAGS" => "-ObjC -all_load" }
 
+    cur.dependency 'PortalIosLibrary/WVRNet'
+    cur.dependency 'PortalIosMidwareMidware/WVRPlayerUI'
+    cur.dependency 'PortalIosMidware/WVRAPIService'
+    cur.dependency 'PortalIosMidware/WVRMediator'
+  end
+
+  s.subspec 'WVRPay' do |cur|
+    cur.prefix_header_contents = '#import "WVRPayPrefixHeader.h"'
+    
+    cur.source_files = 'WVRPay/WVRPay/Classes/**/*.{h,m}','WVRPay/WVRPay/Classes/*.{h,m}'
+
+    cur.vendored_frameworks = ['WVRPay/WVRPay/Classes/Plugin/AliPayPlugin/AlipaySDK.framework']
+    cur.vendored_libraries = ['WVRPay/WVRPay/Classes/Plugin/IpaynowPlugin/iPhone+Simulator/libIPaynowPlugin.a', 'WVRPay/WVRPay/Classes/Plugin/WechatPlugin/WXWeChatSDK.a']
+
+    cur.requires_arc = true
+
+    cur.dependency 'PortalIosMidware/WVRMediator'
+    cur.dependency 'PortalIosMidware/WVRUIFrame'
+    cur.dependency 'PortalIosLibrary/WVRImage'
+    cur.dependency 'PortalIosLibrary/WVRCache'
+    cur.dependency 'PortalIosLibrary/WVRAppContext'
+    cur.dependency 'PortalIosLibrary/WVRNet'
+    cur.dependency 'PortalIosMidwareMidware/WVRWidget'
+    cur.dependency 'PortalIosMidware/WVRInteractor'
+    cur.dependency 'PortalIosLibrary/WVRNetModel'
+    cur.dependency 'PortalIosMidware/WVRAPIService'
+    cur.dependency 'PortalIosLibraryMidware/WVRBI'
+
+    cur.framework = 'CoreMotion'
+    cur.libraries = 'c++'
+  end
+
+  s.subspec 'WVRSetting' do |cur|
+    cur.source_files = ['WVRSetting/WVRSetting/Core/*.{h,m}', 'WVRSetting/WVRSetting/Core/**/*.{h,m}']
+    cur.resources = ['WVRSetting/WVRSetting/Core/Resource/**/*']
+    cur.requires_arc = true
+
+    cur.prefix_header_contents = '#import "WVRSettingHeader.h"'
+    
+    cur.framework = 'UIKit', 'Foundation'
+    
+    cur.dependency 'ReactiveObjC'
+    
+
+    cur.dependency 'PortalIosMidware/WVRMediator'
+    cur.dependency 'PortalIosMidware/WVRUIFrame'
+    cur.dependency 'PortalIosLibrary/WVRImage'
+    cur.dependency 'PortalIosLibrary/WVRCache'
+    cur.dependency 'PortalIosLibrary/WVRAppContext'
+    cur.dependency 'PortalIosLibrary/WVRNet'
+    cur.dependency 'PortalIosMidwareMidware/WVRWidget'
+    cur.dependency 'PortalIosMidware/WVRInteractor'
+    cur.dependency 'PortalIosLibrary/WVRNetModel'
+    cur.dependency 'PortalIosMidware/WVRAPIService'
+    cur.dependency 'PortalIosLibraryMidware/WVRBI'
+    cur.dependency 'PortalIosLibrary/WVRShare'
+    cur.dependency 'PortalIosLibrary/WVRUtil'
+    
+
+  end
+
+  s.subspec 'WVRAccount' do |cur|
+    cur.source_files = 'WVRAccount/WVRAccount/Core/**/*.{h,m}'
+    cur.prefix_header_contents = '#import "WVRAccountHeader.h"'
+    cur.requires_arc = true
+    cur.framework = 'UIKit', 'Foundation'
+
+    cur.dependency 'AFNetworking'
+    cur.dependency 'YYModel'
+    cur.dependency 'ReactiveObjC'
+    cur.dependency 'FMDB'
+    
+
+    cur.dependency 'PortalIosMidware/WVRMediator'
+    cur.dependency 'PortalIosMidware/WVRUIFrame'
+    cur.dependency 'PortalIosLibrary/WVRImage'
+    cur.dependency 'PortalIosLibrary/WVRCache'
+    cur.dependency 'PortalIosLibrary/WVRAppContext'
+    cur.dependency 'PortalIosLibrary/WVRNet'
+    cur.dependency 'PortalIosMidwareMidware/WVRWidget'
+    cur.dependency 'PortalIosMidware/WVRInteractor'
+    cur.dependency 'PortalIosLibrary/WVRNetModel'
+    cur.dependency 'PortalIosMidware/WVRAPIService'
+    cur.dependency 'PortalIosLibraryMidware/WVRBI'
+    cur.dependency 'PortalIosLibrary/WVRShare'
+    cur.dependency 'PortalIosLibrary/WVRUtil'
+    
+
+  end
+
+  # s.dependency 'WVRPlayer'  WVRPlayer framwork 大于100MB，无法上传到git
+  # s.subspec 'WVRProgram' do |cur|
+  #   cur.source_files = ['WVRProgram/WVRProgram/Classes/*.{h,m}', 'WVRProgram/WVRProgram/Classes/**/*.{h,m}']
+  #   cur.resources = ['WVRProgram/WVRProgram/Classes/**/*.{xib}']
+  #   cur.framework = 'UIKit', 'Foundation'
+
+  #   cur.prefix_header_contents = '#import "WVRProgramHeader.h"'
+    
+  #   cur.requires_arc = true
+
+  #   cur.dependency 'LKDBHelper'
+  #   cur.dependency 'HMSegmentedControl'
+  #   cur.dependency 'CocoaHTTPServer'
+  #   cur.dependency 'RZDataBinding'
+  #   cur.dependency 'ReactiveObjC'
+
+  #   cur.dependency 'PortalIosMidware/WVRMediator'
+  #   cur.dependency 'PortalIosMidware/WVRUIFrame'
+  #   cur.dependency 'PortalIosLibrary/WVRImage'
+  #   cur.dependency 'PortalIosLibrary/WVRCache'
+  #   cur.dependency 'PortalIosLibrary/WVRAppContext'
+  #   cur.dependency 'PortalIosLibrary/WVRNet'
+  #   cur.dependency 'PortalIosMidwareMidware/WVRWidget'
+  #   cur.dependency 'PortalIosMidware/WVRInteractor'
+  #   cur.dependency 'PortalIosLibrary/WVRNetModel'
+  #   cur.dependency 'PortalIosMidware/WVRAPIService'
+  #   cur.dependency 'PortalIosLibraryMidware/WVRBI'
+  #   cur.dependency 'PortalIosLibrary/WVRShare'
+  #   cur.dependency 'PortalIosLibrary/WVRUtil'
+  #   cur.dependency 'PortalIosLibrary/WVRParser'
+  #   cur.dependency 'PortalIosMidwareMidware/WVRPlayerUI'
+  #   cur.dependency 'PortalIosMidwareMidware/WVRHybrid'
+
+  # end
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Link your library with frameworks, or libraries. Libraries do not include
