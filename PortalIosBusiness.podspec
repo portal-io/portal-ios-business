@@ -200,7 +200,7 @@ Pod::Spec.new do |s|
     cur.dependency 'PortalIosLibrary/WVRNetModel'
     cur.dependency 'PortalIosMidware/WVRAPIService'
     cur.dependency 'PortalIosLibraryMidware/WVRBI'
-    cur.dependency 'PortalIosLibrary/WVRShare'
+    cur.dependency 'PortalIosLibraryMidware/WVRShare'
     cur.dependency 'PortalIosLibrary/WVRUtil'
     
 
